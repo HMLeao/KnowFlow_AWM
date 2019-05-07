@@ -61,10 +61,10 @@ SdService :: ~ SdService ()
 }
 
 //********************************************************************************************
-// function name: setup ()
+// function name: begin ()
 // Function Description: Initialize the SD card
 //********************************************************************************************
-void SdService::setup()
+void SdService::begin()
 {
 	Debug::println("Initializing SD card...");
 

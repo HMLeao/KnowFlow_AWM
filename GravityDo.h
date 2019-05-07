@@ -10,7 +10,7 @@ public:
 	~GravityDo();
 
 public:
-	void setup();
+	void begin();
 	void update();
     void setPin(int pin);
 	double getValue();

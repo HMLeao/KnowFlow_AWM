@@ -29,10 +29,10 @@ public:
 
 public:
 	// initialization
-	void  setup ();
+	void  begin ();
 
 
-	void  setup(Stream& st);
+	void  begin(Stream& st);
 
 	// update the sensor data
 	void  update ();

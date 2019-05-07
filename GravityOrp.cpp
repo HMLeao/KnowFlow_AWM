@@ -32,10 +32,10 @@ GravityOrp::~GravityOrp()
 }
 
 //********************************************************************************************
-// function name: setup ()
+// function name: begin ()
 // Function Description: Initializes the sensor
 //********************************************************************************************
-void GravityOrp::setup()
+void GravityOrp::begin()
 {
 }
 

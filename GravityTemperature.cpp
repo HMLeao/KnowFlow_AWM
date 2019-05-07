@@ -30,10 +30,10 @@ GravityTemperature::~GravityTemperature()
 
 
 //********************************************************************************************
-// function name: setup ()
+// function name: begin ()
 // Function Description: Initializes the sensor
 //********************************************************************************************
-void GravityTemperature::setup()
+void GravityTemperature::begin()
 {
 }
 

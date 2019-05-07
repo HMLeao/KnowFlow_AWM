@@ -3,7 +3,7 @@
 
 GravityTemperature myTemp(TEMPPIN);
 
-void setup()
+void begin()
 {
     Serial.begin(9600);
 }

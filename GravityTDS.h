@@ -12,7 +12,7 @@ public:
 	~GravityTDS();
 
 public:
-	void setup();
+	void begin();
 	void update();
 	double getValue();
     void setPin(int pin);

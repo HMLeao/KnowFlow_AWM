@@ -34,10 +34,10 @@ GravityRtc::~GravityRtc()
 }
 
 //********************************************************************************************
-// function name: setup ()
+// function name: begin ()
 // Function Description: Initializes the sensor
 //********************************************************************************************
-void GravityRtc::setup()
+void GravityRtc::begin()
 {
 	Wire.begin();
 	// initRtc ();

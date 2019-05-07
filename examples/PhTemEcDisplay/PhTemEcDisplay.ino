@@ -10,11 +10,11 @@ GravityEc myEc(&myTemp);
 GravityPh myPh;
 
 
-void setup() {
+void begin() {
   lcd.begin (16,2);
   
   lcd.setBacklight(HIGH);
-  myEc.setup();
+  myEc.begin();
   
 }
 

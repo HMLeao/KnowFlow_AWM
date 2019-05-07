@@ -51,7 +51,7 @@ public:
 	~GravityOrp();
 
 	// initialize the sensor
-	void  setup ();
+	void  begin ();
 
 	// update the sensor data
 	void  update ();

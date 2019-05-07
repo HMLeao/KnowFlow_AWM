@@ -44,7 +44,7 @@ public:
 	~GravitySensorHub();
 
 	// initialize all sensors
-	void  setup ();
+	void  begin ();
 
 	// update all sensor values
 	void  update ();

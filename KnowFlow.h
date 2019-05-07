@@ -1,7 +1,9 @@
-#pragma once
+#ifndef KnowFlow_H
+#define KnowFlow_H
 
 
-//calling everybody
+//calling everybody at once
+#include "ISensor.h"
 #include "Config.h"
 #include "Debug.h"
 #include "GravityDo.h"
@@ -14,3 +16,6 @@
 #include "GravityTemperature.h"
 #include "SdService.h"
 #include "SensorDo.h"
+
+
+#endif

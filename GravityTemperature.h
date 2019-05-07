@@ -33,7 +33,7 @@ public:
 	~GravityTemperature();
 
 	// initialization
-	void  setup ();
+	void  begin ();
 
 	// update the sensor data
 	void  update ();

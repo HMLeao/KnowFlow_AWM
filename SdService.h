@@ -41,7 +41,7 @@ public:
 	~ SdService ();
 
 	// initialization
-	void  setup ();
+	void  begin ();
 
 	// Update write SD card data
 	void  update ();

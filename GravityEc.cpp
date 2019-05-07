@@ -38,10 +38,10 @@ GravityEc::~GravityEc()
 
 
 //********************************************************************************************
-// function name: setup ()
+// function name: begin ()
 // Function Description: Initializes the sensor
 //********************************************************************************************
-void GravityEc::setup()
+void GravityEc::begin()
 {
 	pinMode(ecSensorPin, INPUT);
 	for (byte thisReading = 0; thisReading < numReadings; thisReading++)

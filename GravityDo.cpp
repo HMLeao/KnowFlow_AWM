@@ -52,7 +52,7 @@ void GravityDo::setTemperature(float temperature)
     this->_temperature = temperature;
 }
 
-void GravityDo::setup()
+void GravityDo::begin()
 {
     readDoCharacteristicValues();      //read Characteristic Values calibrated from the EEPROM
 }

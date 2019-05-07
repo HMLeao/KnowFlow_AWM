@@ -16,7 +16,7 @@ void GravityTDS::setPin(int pin)
 }
 
 
-void GravityTDS::setup()
+void GravityTDS::begin()
 {
 	    pinMode(this->pin,INPUT);
 

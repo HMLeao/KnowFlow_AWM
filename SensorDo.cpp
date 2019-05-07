@@ -40,21 +40,21 @@ SensorDo::~SensorDo()
 
 
 //********************************************************************************************
-// function name: setup ()
+// function name: begin ()
 // Function Description: Initializes the sensor
 //********************************************************************************************
-void SensorDo::setup()
+void SensorDo::begin()
 {
 	sensorstring.reserve(30);
 }
 
 //********************************************************************************************
-// Overloading setup for define the input Stream. That Stream must have been initialized, 
+// Overloading begin for define the input Stream. That Stream must have been initialized, 
 // that is, you need to pass it with the baud rate set to 9600 baud beforhands.	
 // NOTE: not all pins on the Mega can be used as RX. Please use one of the following pins for RX:
 // 	-> 10, 11, 12, 13, 50, 51, 52, 53, 62, 63, 64, 65, 66, 67, 68 or 69.
 //********************************************************************************************
-void SensorDo::setup(Stream& st)
+void SensorDo::begin(Stream& st)
 {
 	sensorstring.reserve(30);
 	this->inputStream = &st;

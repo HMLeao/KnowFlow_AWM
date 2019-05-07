@@ -16,11 +16,12 @@
 **********************************************************************/
 #pragma once
 #include "Config.h"
+#include "Arduino.h"
 
 class ISensor
 {
 public:
-	virtual void setup()		= 0;
+	virtual void begin()		= 0;
 	virtual void update()		= 0;
 	virtual double getValue()	= 0;
 };

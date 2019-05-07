@@ -43,7 +43,7 @@ public:
 	void initRtc();
 
 	// initialization
-	void  setup ();
+	void  begin ();
 
 	// update the sensor data
 	void  update ();

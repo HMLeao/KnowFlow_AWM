@@ -28,10 +28,10 @@ samplingInterval(30),pHValue(0),voltage(0), sum(0)
 }
 
 //********************************************************************************************
-// function name: setup ()
+// function name: begin ()
 // Function Description: Initializes the ph sensor
 //********************************************************************************************
-void GravityPh::setup()
+void GravityPh::begin()
 {
 	pinMode(phSensorPin, INPUT);
 }

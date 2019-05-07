@@ -68,16 +68,16 @@ GravitySensorHub::~GravitySensorHub()
 
 
 //********************************************************************************************
-// function name: setup ()
+// function name: begin ()
 // Function Description: Initializes all sensors
 //********************************************************************************************
-void GravitySensorHub::setup()
+void GravitySensorHub::begin()
 {
 	for (size_t i = 0; i < SensorCount; i++)
 	{
 		if (this->sensors[i])
 		{
-			this->sensors[i]->setup();
+			this->sensors[i]->begin();
 		}
 	}
 }
