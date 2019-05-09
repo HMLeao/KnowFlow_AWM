@@ -68,25 +68,25 @@ void SensorDo::begin(Stream& st)
 void SensorDo::update()
 {
 	static boolean sensorStringComplete = false;
-	if (inputStream->available() > 0)
-	{
-		while(inputStream->available()>0){
-			char inchar = (char)inputStream->read();
-			this->sensorstring += inchar;
-			if (inchar == '\r'){
-				sensorStringComplete = true;
-				break;
+		if (inputStream->available() > 0)
+		{
+			while(inputStream->available()>0){			
+				char inchar = (char)inputStream->read();
+				this->sensorstring += inchar;
+				if (inchar == '\r'){
+					sensorStringComplete = true;
+					break;
+				}
 			}
+			inputStream->flush();		
 		}
-		inputStream->flush();		
-	}
-	if (sensorStringComplete == true)
-	{
-		if (isdigit(this->sensorstring[0]))
-			doValue = this->sensorstring.toFloat();
-		this->sensorstring = "";
-		sensorStringComplete = false;
-	}
+		if (sensorStringComplete == true)
+		{
+			if (isdigit(this->sensorstring[0]))
+				doValue = this->sensorstring.toFloat();
+			this->sensorstring = "";
+			sensorStringComplete = false;
+		}
 }
 
 //********************************************************************************************
