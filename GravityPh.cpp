@@ -22,8 +22,8 @@
 #include "GravityPh.h"
 
 
-GravityPh::GravityPh():phSensorPin(A2), offset(0.0f), 
-samplingInterval(30),pHValue(0),voltage(0), sum(0)
+GravityPh::GravityPh():phSensorPin(A2), offset(PH_B_COEFF), 
+samplingInterval(30),pHValue(0),voltage(0), sum(0), slope(PH_M_COEFF)
 {
 }
 
@@ -59,7 +59,8 @@ void GravityPh::update()
 			averageVoltage = this->sum / arrayLength;
 			this->sum = 0;
 			voltage = averageVoltage*5.0 / 1024.0;
-			pHValue = 3.5*voltage + this->offset;
+			pHValue = slope*voltage + this->offset;	//	<-- Linear function 
+			//		   ^ 		             ^    parameters to be set when calibrating
 		}
 
 	}
