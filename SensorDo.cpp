@@ -21,6 +21,7 @@
 
 SensorDo::SensorDo()
 {
+	this->inputStream = &Serial;
 }
 
 
@@ -46,6 +47,7 @@ SensorDo::~SensorDo()
 void SensorDo::begin()
 {
 	sensorstring.reserve(30);
+	Serial.begin(9600);
 }
 
 //********************************************************************************************
@@ -67,7 +69,11 @@ void SensorDo::begin(Stream& st)
 //********************************************************************************************
 void SensorDo::update()
 {
-	static boolean sensorStringComplete = false;
+	inputStream->listen();
+	delay(100);
+	if (inputStream->isListening())
+	{
+		static boolean sensorStringComplete = false;
 		if (inputStream->available() > 0)
 		{
 			while(inputStream->available()>0){			
@@ -87,6 +93,13 @@ void SensorDo::update()
 			this->sensorstring = "";
 			sensorStringComplete = false;
 		}
+	}
+	else
+	{
+		inputStream->flush();
+		return;
+	}
+	
 }
 
 //********************************************************************************************
