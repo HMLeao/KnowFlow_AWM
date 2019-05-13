@@ -6,7 +6,7 @@ GravityTemperature myTemp(TEMPPIN);
 
 LiquidCrystal_I2C lcd(0x3f,2,1,0,4,5,6,7,3, POSITIVE);
 
-void begin() {
+void setup() {
   lcd.begin (16,2);
   lcd.setBacklight(HIGH);
   myOrp.begin();

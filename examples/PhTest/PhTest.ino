@@ -2,7 +2,7 @@
 
 GravityPh myPhMeter;
 
-void begin() {
+void setup() {
   Serial.begin(9600);
   myPhMeter.setOffset(0.45);
 }
