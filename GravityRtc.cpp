@@ -48,26 +48,25 @@ void GravityRtc::adjustRtc(const __FlashStringHelper* date, const __FlashStringH
 {
 	char buff[11];
     memcpy_P(buff, date, 11);
-    year = conv2d(buff + 9);
+    this->year = conv2d(buff + 9);
     // Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
     switch (buff[0]) {
-        case 'J': month = buff[1] == 'a' ? 1 : month = buff[2] == 'n' ? 6 : 7; break;
-        case 'F': month = 2; break;
-        case 'A': month = buff[2] == 'r' ? 4 : 8; break;
-        case 'M': month = buff[2] == 'r' ? 3 : 5; break;
-        case 'S': month = 9; break;
-        case 'O': month = 10; break;
-        case 'N': month = 11; break;
-        case 'D': month = 12; break;
+        case 'J': this->month = buff[1] == 'a' ? 1 : this->month = buff[2] == 'n' ? 6 : 7; break;
+        case 'F': this->month = 2; break;
+        case 'A': this->month = buff[2] == 'r' ? 4 : 8; break;
+        case 'M': this->month = buff[2] == 'r' ? 3 : 5; break;
+        case 'S': this->month = 9; break;
+        case 'O': this->month = 10; break;
+        case 'N': this->month = 11; break;
+        case 'D': this->month = 12; break;
     }
-    day = conv2d(buff + 4);
+    this->day = conv2d(buff + 4);
     memcpy_P(buff, time, 8);
-    hour = conv2d(buff);
-    minute = conv2d(buff + 3);
-    second = conv2d(buff + 6);
+    this->hour = conv2d(buff);
+    this->minute = conv2d(buff + 3);
+    this->second = conv2d(buff + 6);
 
-	week = dayOfTheWeek();
-
+	this->week = dayOfTheWeek();
 	adjustRtc(year,month,day,week,hour,minute,second);
 }
 

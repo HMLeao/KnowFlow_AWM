@@ -32,14 +32,7 @@ public:
 	~GravityRtc() {};
 
 public:
-	//Year Month Day Weekday Minute Second
-	uint16_t year;
-	uint8_t month;
-	uint8_t day;
-	uint8_t week;
-	uint8_t hour;
-	uint8_t minute;
-	uint8_t second;
+
 	
 	//Initialize RTC time to set the corresponding year, month, day, Weekday Minute Second
 	void adjustRtc(const __FlashStringHelper* date, const __FlashStringHelper* time);
@@ -53,6 +46,14 @@ public:
 	//Update sensor data
 	void read();
 	
+	//getters for encapsulating time parameters
+	uint16_t	getYear()	{return this->year;};
+	uint8_t 	getMonth()	{return this->month;};
+	uint8_t 	getDay()	{return this->day;};		
+	uint8_t 	getWeek()	{return this->week;};
+	uint8_t 	getHour()	{return this->hour;};
+	uint8_t 	getMinute()	{return this->minute;};
+	uint8_t 	getSecond()	{return this->second;};
 
 private:
 	uint8_t date[7];
@@ -75,6 +76,17 @@ private:
  	uint16_t date2days(uint16_t y, uint8_t m, uint8_t d);
 	
 	uint8_t conv2d(const char* p);
+
+
+private:
+		//Year Month Day Weekday Minute Second
+	uint16_t year;
+	uint8_t month;
+	uint8_t day;
+	uint8_t week;
+	uint8_t hour;
+	uint8_t minute;
+	uint8_t second;
 
 };
 

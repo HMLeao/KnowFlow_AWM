@@ -100,17 +100,17 @@ void SdService::update()
 		Serial.println("Write Sd card");
 		dataString = "";
 		// Year Month Day Hours Minute Seconds
-		dataString += String(rtc.year,10);
+		dataString += String(rtc.getYear(),10);
 		dataString += ",";
-		dataString += String(rtc.month, 10);
+		dataString += String(rtc.getMonth(), 10);
 		dataString += ",";
-		dataString += String(rtc.day, 10);
+		dataString += String(rtc.getDay(), 10);
 		dataString += ",";
-		dataString += String(rtc.hour, 10);
+		dataString += String(rtc.getHour(), 10);
 		dataString += ",";
-		dataString += String(rtc.minute, 10);
+		dataString += String(rtc.getMinute(), 10);
 		dataString += ",";
-		dataString += String(rtc.second, 10);
+		dataString += String(rtc.getSecond(), 10);
 		dataString += ",";
 
 		// write SD card, write data twice, to prevent a single write data caused by the loss of too large
