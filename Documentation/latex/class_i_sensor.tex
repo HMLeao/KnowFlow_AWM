@@ -12,17 +12,45 @@ Inheritance diagram for I\+Sensor\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual void {\bfseries begin} ()=0\hypertarget{class_i_sensor_a88d0363e9bb83378090a021d634e03f7}{}\label{class_i_sensor_a88d0363e9bb83378090a021d634e03f7}
-
+virtual void \hyperlink{class_i_sensor_a88d0363e9bb83378090a021d634e03f7}{begin} ()=0
 \item 
-virtual void {\bfseries update} ()=0\hypertarget{class_i_sensor_a53606e8b3764eda1b4b0c00aa983e264}{}\label{class_i_sensor_a53606e8b3764eda1b4b0c00aa983e264}
-
+virtual void \hyperlink{class_i_sensor_a53606e8b3764eda1b4b0c00aa983e264}{update} ()=0
 \item 
-virtual double {\bfseries get\+Value} ()=0\hypertarget{class_i_sensor_a9972b325fb329e6eaefd79e562ad7776}{}\label{class_i_sensor_a9972b325fb329e6eaefd79e562ad7776}
-
+virtual double \hyperlink{class_i_sensor_a9972b325fb329e6eaefd79e562ad7776}{get\+Value} ()=0
 \end{DoxyCompactItemize}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
-\item 
-/home/henrique/arduino-\/1.\+8.\+9/libraries/\+Know\+Flow/I\+Sensor.\+h\end{DoxyCompactItemize}
+\subsection{Member Function Documentation}
+\index{I\+Sensor@{I\+Sensor}!begin@{begin}}
+\index{begin@{begin}!I\+Sensor@{I\+Sensor}}
+\subsubsection[{\texorpdfstring{begin()=0}{begin()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void I\+Sensor\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_i_sensor_a88d0363e9bb83378090a021d634e03f7}{}\label{class_i_sensor_a88d0363e9bb83378090a021d634e03f7}
+This function starts the sensor. All the initial configurations must be done here 
+
+Implemented in \hyperlink{class_gravity_orp_a03543b2abbe0be53f2dfb799b22b3aef}{Gravity\+Orp}, \hyperlink{class_gravity_ph_a15c06b3c63d098a3b413e5cc97beb547}{Gravity\+Ph}, \hyperlink{class_gravity_ec_aab0f65470fdff7fb4465ecbbf57556a1}{Gravity\+Ec}, \hyperlink{class_sensor_do_a211a11e96355ab492b1fa4b45a9d9f8c}{Sensor\+Do}, \hyperlink{class_gravity_temperature_a4b0e6bba015c69a153a85cc8221dee2f}{Gravity\+Temperature}, \hyperlink{class_gravity_t_d_s_a1918273706ab9bfafe2e9a3ea3a61171}{Gravity\+T\+DS}, and \hyperlink{class_gravity_do_a50230d3b101165f876cd595f5839e40b}{Gravity\+Do}.
+
+\index{I\+Sensor@{I\+Sensor}!get\+Value@{get\+Value}}
+\index{get\+Value@{get\+Value}!I\+Sensor@{I\+Sensor}}
+\subsubsection[{\texorpdfstring{get\+Value()=0}{getValue()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual double I\+Sensor\+::get\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_i_sensor_a9972b325fb329e6eaefd79e562ad7776}{}\label{class_i_sensor_a9972b325fb329e6eaefd79e562ad7776}
+This function must return the sensor data. You should run \hyperlink{class_i_sensor_a53606e8b3764eda1b4b0c00aa983e264}{update()} just before \hyperlink{class_i_sensor_a9972b325fb329e6eaefd79e562ad7776}{get\+Value()} to return a recent and valid data. 
+
+Implemented in \hyperlink{class_gravity_orp_a2b4da109c95a3415fc70b9523bd13700}{Gravity\+Orp}, \hyperlink{class_gravity_ph_a12f9ad86776c01409e0e3d4e3ab46178}{Gravity\+Ph}, \hyperlink{class_sensor_do_a811d2c2e9dac3246763889226955a064}{Sensor\+Do}, \hyperlink{class_gravity_ec_ac7307196ab402c5a65cbc8beb9dd7399}{Gravity\+Ec}, \hyperlink{class_gravity_temperature_a7ee39e7ab5521f9dcbdea543c26c3a26}{Gravity\+Temperature}, \hyperlink{class_gravity_t_d_s_a9812b355ecc031f1dfb7039208f1c170}{Gravity\+T\+DS}, and \hyperlink{class_gravity_do_adaf18c91b1528ffbffceb097df12e54e}{Gravity\+Do}.
+
+\index{I\+Sensor@{I\+Sensor}!update@{update}}
+\index{update@{update}!I\+Sensor@{I\+Sensor}}
+\subsubsection[{\texorpdfstring{update()=0}{update()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void I\+Sensor\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_i_sensor_a53606e8b3764eda1b4b0c00aa983e264}{}\label{class_i_sensor_a53606e8b3764eda1b4b0c00aa983e264}
+This function updates the sensor value and stores the value, so that it\textquotesingle{}s ready to return data 
+
+Implemented in \hyperlink{class_gravity_orp_aa39d1bf33bcf7f4f415fd51d8129d15a}{Gravity\+Orp}, \hyperlink{class_gravity_ph_a3661f2d7ae52fcdcc7cde674e9a1e213}{Gravity\+Ph}, \hyperlink{class_sensor_do_ae0d28d943e612b1a840a0b5e5bd5566d}{Sensor\+Do}, \hyperlink{class_gravity_ec_a8e0463b6147cfbcbc1488dd1614141c7}{Gravity\+Ec}, \hyperlink{class_gravity_temperature_aa7a3463559fe46fa4471f779fb5ffdce}{Gravity\+Temperature}, \hyperlink{class_gravity_t_d_s_a56be401a2aa89a4918319e0d8262ea48}{Gravity\+T\+DS}, and \hyperlink{class_gravity_do_aafb8fcc3cdf0aac907288a0e5eb62b29}{Gravity\+Do}.
+

@@ -35,7 +35,7 @@
    <div id="projectname">HM - Know Flow lib
    &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">This lib is a fork from the KnowFlow project. It offers support for take measurements from water and check it&#39;s quality.</div>
+   <div id="projectbrief">This lib is a fork from the KnowFlow project. It offers support for taking measurements from water and check it&#39;s quality.</div>
   </td>
  </tr>
  </tbody>
@@ -139,14 +139,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1156c03146096ebd11dfeb12d047b017"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1156c03146096ebd11dfeb12d047b017"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>GravityTemperature</b> (int pin)</td></tr>
 <tr class="separator:a1156c03146096ebd11dfeb12d047b017"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b0e6bba015c69a153a85cc8221dee2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b0e6bba015c69a153a85cc8221dee2f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
+<tr class="memitem:a4b0e6bba015c69a153a85cc8221dee2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_temperature.html#a4b0e6bba015c69a153a85cc8221dee2f">begin</a> ()</td></tr>
 <tr class="separator:a4b0e6bba015c69a153a85cc8221dee2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7a3463559fe46fa4471f779fb5ffdce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7a3463559fe46fa4471f779fb5ffdce"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
+<tr class="memitem:aa7a3463559fe46fa4471f779fb5ffdce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_temperature.html#aa7a3463559fe46fa4471f779fb5ffdce">update</a> ()</td></tr>
 <tr class="separator:aa7a3463559fe46fa4471f779fb5ffdce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ee39e7ab5521f9dcbdea543c26c3a26"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ee39e7ab5521f9dcbdea543c26c3a26"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getValue</b> ()</td></tr>
+<tr class="memitem:a7ee39e7ab5521f9dcbdea543c26c3a26"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_temperature.html#a7ee39e7ab5521f9dcbdea543c26c3a26">getValue</a> ()</td></tr>
 <tr class="separator:a7ee39e7ab5521f9dcbdea543c26c3a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -158,10 +155,85 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>temperaturePin</b></td
 double&#160;</td><td class="memItemRight" valign="bottom"><b>temperature</b></td></tr>
 <tr class="separator:a6a4ea3f7581c3d3f18269492c7cc5c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/henrique/arduino-1.8.9/libraries/KnowFlow/<a class="el" href="_gravity_temperature_8h_source.html">GravityTemperature.h</a></li>
-<li>/home/henrique/arduino-1.8.9/libraries/KnowFlow/GravityTemperature.cpp</li>
-</ul>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a4b0e6bba015c69a153a85cc8221dee2f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GravityTemperature::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function starts the sensor. All the initial configurations must be done here </p>
+
+<p>Implements <a class="el" href="class_i_sensor.html#a88d0363e9bb83378090a021d634e03f7">ISensor</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7ee39e7ab5521f9dcbdea543c26c3a26"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double GravityTemperature::getValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function must return the sensor data. You should run <a class="el" href="class_gravity_temperature.html#aa7a3463559fe46fa4471f779fb5ffdce">update()</a> just before <a class="el" href="class_gravity_temperature.html#a7ee39e7ab5521f9dcbdea543c26c3a26">getValue()</a> to return a recent and valid data. </p>
+
+<p>Implements <a class="el" href="class_i_sensor.html#a9972b325fb329e6eaefd79e562ad7776">ISensor</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa7a3463559fe46fa4471f779fb5ffdce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GravityTemperature::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function updates the sensor value and stores the value, so that it's ready to return data </p>
+
+<p>Implements <a class="el" href="class_i_sensor.html#a53606e8b3764eda1b4b0c00aa983e264">ISensor</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

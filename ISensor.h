@@ -18,10 +18,30 @@
 #include "Config.h"
 #include "Arduino.h"
 
+/**
+ * @file ISensor.h
+ * @brief This class represents a generic sensor.
+ * @author Jason(jason.ling@dfrobot.com)
+ * @date 2017-04-06
+ */ 
+
 class ISensor
 {
 public:
+
+	/**
+	 * This function starts the sensor. All the initial configurations must be done here
+	 */ 
 	virtual void begin()		= 0;
+
+	/**
+	 * This function updates the sensor value and stores the value, so that it's ready to return data
+	 */ 
 	virtual void update()		= 0;
+
+	/**
+	 * This function must return the sensor data. You should run update() just before getValue() 
+	 * to return a recent and valid data.
+	 */ 
 	virtual double getValue()	= 0;
 };

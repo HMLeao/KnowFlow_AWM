@@ -35,7 +35,7 @@
    <div id="projectname">HM - Know Flow lib
    &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">This lib is a fork from the KnowFlow project. It offers support for take measurements from water and check it&#39;s quality.</div>
+   <div id="projectbrief">This lib is a fork from the KnowFlow project. It offers support for taking measurements from water and check it&#39;s quality.</div>
   </td>
  </tr>
  </tbody>
@@ -135,14 +135,11 @@ Collaboration diagram for GravityTDS:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1918273706ab9bfafe2e9a3ea3a61171"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1918273706ab9bfafe2e9a3ea3a61171"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
+<tr class="memitem:a1918273706ab9bfafe2e9a3ea3a61171"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_t_d_s.html#a1918273706ab9bfafe2e9a3ea3a61171">begin</a> ()</td></tr>
 <tr class="separator:a1918273706ab9bfafe2e9a3ea3a61171"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56be401a2aa89a4918319e0d8262ea48"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56be401a2aa89a4918319e0d8262ea48"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
+<tr class="memitem:a56be401a2aa89a4918319e0d8262ea48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_t_d_s.html#a56be401a2aa89a4918319e0d8262ea48">update</a> ()</td></tr>
 <tr class="separator:a56be401a2aa89a4918319e0d8262ea48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9812b355ecc031f1dfb7039208f1c170"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9812b355ecc031f1dfb7039208f1c170"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getValue</b> ()</td></tr>
+<tr class="memitem:a9812b355ecc031f1dfb7039208f1c170"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_t_d_s.html#a9812b355ecc031f1dfb7039208f1c170">getValue</a> ()</td></tr>
 <tr class="separator:a9812b355ecc031f1dfb7039208f1c170"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a91e8461f6696ffff169c456eb9cbac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a91e8461f6696ffff169c456eb9cbac"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setPin</b> (int pin)</td></tr>
@@ -154,10 +151,85 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>setTemperature</b> (
 float&#160;</td><td class="memItemRight" valign="bottom"><b>setVref</b> (float value)</td></tr>
 <tr class="separator:ab7732b7a1ac0c4725b48d9c601830176"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/henrique/arduino-1.8.9/libraries/KnowFlow/<a class="el" href="_gravity_t_d_s_8h_source.html">GravityTDS.h</a></li>
-<li>/home/henrique/arduino-1.8.9/libraries/KnowFlow/GravityTDS.cpp</li>
-</ul>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a1918273706ab9bfafe2e9a3ea3a61171"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GravityTDS::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function starts the sensor. All the initial configurations must be done here </p>
+
+<p>Implements <a class="el" href="class_i_sensor.html#a88d0363e9bb83378090a021d634e03f7">ISensor</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9812b355ecc031f1dfb7039208f1c170"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double GravityTDS::getValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function must return the sensor data. You should run <a class="el" href="class_gravity_t_d_s.html#a56be401a2aa89a4918319e0d8262ea48">update()</a> just before <a class="el" href="class_gravity_t_d_s.html#a9812b355ecc031f1dfb7039208f1c170">getValue()</a> to return a recent and valid data. </p>
+
+<p>Implements <a class="el" href="class_i_sensor.html#a9972b325fb329e6eaefd79e562ad7776">ISensor</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a56be401a2aa89a4918319e0d8262ea48"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GravityTDS::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function updates the sensor value and stores the value, so that it's ready to return data </p>
+
+<p>Implements <a class="el" href="class_i_sensor.html#a53606e8b3764eda1b4b0c00aa983e264">ISensor</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -35,7 +35,7 @@
    <div id="projectname">HM - Know Flow lib
    &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">This lib is a fork from the KnowFlow project. It offers support for take measurements from water and check it&#39;s quality.</div>
+   <div id="projectbrief">This lib is a fork from the KnowFlow project. It offers support for taking measurements from water and check it&#39;s quality.</div>
   </td>
  </tr>
  </tbody>
@@ -139,14 +139,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6907e34720f011cf7eed6a99c93ab66f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6907e34720f011cf7eed6a99c93ab66f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>GravityEc</b> (<a class="el" href="class_i_sensor.html">ISensor</a> *)</td></tr>
 <tr class="separator:a6907e34720f011cf7eed6a99c93ab66f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab0f65470fdff7fb4465ecbbf57556a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab0f65470fdff7fb4465ecbbf57556a1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
+<tr class="memitem:aab0f65470fdff7fb4465ecbbf57556a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_ec.html#aab0f65470fdff7fb4465ecbbf57556a1">begin</a> ()</td></tr>
 <tr class="separator:aab0f65470fdff7fb4465ecbbf57556a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e0463b6147cfbcbc1488dd1614141c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e0463b6147cfbcbc1488dd1614141c7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
+<tr class="memitem:a8e0463b6147cfbcbc1488dd1614141c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_ec.html#a8e0463b6147cfbcbc1488dd1614141c7">update</a> ()</td></tr>
 <tr class="separator:a8e0463b6147cfbcbc1488dd1614141c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7307196ab402c5a65cbc8beb9dd7399"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7307196ab402c5a65cbc8beb9dd7399"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getValue</b> ()</td></tr>
+<tr class="memitem:ac7307196ab402c5a65cbc8beb9dd7399"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_ec.html#ac7307196ab402c5a65cbc8beb9dd7399">getValue</a> ()</td></tr>
 <tr class="separator:ac7307196ab402c5a65cbc8beb9dd7399"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -158,10 +155,85 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ecSensorPin</b></td></
 double&#160;</td><td class="memItemRight" valign="bottom"><b>ECcurrent</b></td></tr>
 <tr class="separator:a55b65815e70813e52e8dd66fc6db147b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/henrique/arduino-1.8.9/libraries/KnowFlow/<a class="el" href="_gravity_ec_8h_source.html">GravityEc.h</a></li>
-<li>/home/henrique/arduino-1.8.9/libraries/KnowFlow/GravityEc.cpp</li>
-</ul>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aab0f65470fdff7fb4465ecbbf57556a1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GravityEc::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function starts the sensor. All the initial configurations must be done here </p>
+
+<p>Implements <a class="el" href="class_i_sensor.html#a88d0363e9bb83378090a021d634e03f7">ISensor</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac7307196ab402c5a65cbc8beb9dd7399"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double GravityEc::getValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function must return the sensor data. You should run <a class="el" href="class_gravity_ec.html#a8e0463b6147cfbcbc1488dd1614141c7">update()</a> just before <a class="el" href="class_gravity_ec.html#ac7307196ab402c5a65cbc8beb9dd7399">getValue()</a> to return a recent and valid data. </p>
+
+<p>Implements <a class="el" href="class_i_sensor.html#a9972b325fb329e6eaefd79e562ad7776">ISensor</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8e0463b6147cfbcbc1488dd1614141c7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GravityEc::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function updates the sensor value and stores the value, so that it's ready to return data </p>
+
+<p>Implements <a class="el" href="class_i_sensor.html#a53606e8b3764eda1b4b0c00aa983e264">ISensor</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

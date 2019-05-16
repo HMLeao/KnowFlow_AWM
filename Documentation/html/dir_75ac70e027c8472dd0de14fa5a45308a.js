@@ -10,7 +10,9 @@ var dir_75ac70e027c8472dd0de14fa5a45308a =
     [ "GravitySensorHub.h", "_gravity_sensor_hub_8h_source.html", null ],
     [ "GravityTDS.h", "_gravity_t_d_s_8h_source.html", null ],
     [ "GravityTemperature.h", "_gravity_temperature_8h_source.html", null ],
-    [ "ISensor.h", "_i_sensor_8h_source.html", null ],
+    [ "ISensor.h", "_i_sensor_8h.html", [
+      [ "ISensor", "class_i_sensor.html", "class_i_sensor" ]
+    ] ],
     [ "KnowFlow.h", "_know_flow_8h_source.html", null ],
     [ "SdService.h", "_sd_service_8h_source.html", null ],
     [ "SensorDo.h", "_sensor_do_8h_source.html", null ]
