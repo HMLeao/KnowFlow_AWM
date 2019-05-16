@@ -22,21 +22,21 @@
 #define TEMPPIN 5
 
 
-//Set sensor offset (calibration data)
+///Set sensor offset (calibration data)
 #define PHOFFSET 0.12	//offset for the Ph sensor
 #define ECKVALUE 0.6	//K constant value for the EC sensor
 
-//The maximum number of sensors
+///The maximum number of sensors
 #define SENSORCOUNT 5
 
-//calibration coefficients (slope and y-axis intercept) to give more accurate values for the sensors
+///calibration coefficients (slope and y-axis intercept) to give more accurate values for the sensors
 #define PH_M_COEFF	4.411
 #define	PH_B_COEFF	-0.014
 
 #define ORP_OFFSET	8.79
 
 
-//The sensor corresponds to the array number, ph=0, temperature=1..., the maximum number is SENSORCOUNT-1
+///The sensor corresponds to the array number, ph=0, temperature=1..., the maximum number is SENSORCOUNT-1
 enum SensorNumber
 {
 	phSensor = 0,
