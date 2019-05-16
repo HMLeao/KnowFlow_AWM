@@ -1,0 +1,176 @@
+This branch is for ongoing development
+
+\section*{Know\+Flow -\/ an open source river quality meter with Arduino}
+
+Know\+Flow is an open source water monitoring device and an education program.
+
+
+
+For the device part, Know\+Flow is designed for environmental activists, researchers, students... anyone who wants to know the water quality using low cost and customized tools. It is based on arduino uno and can currently monitor 5 parameters\+: Temperature, pH, O\+RP, Electrical conductivity and Dissolved Oxygen. The data is stored on a micro SD card and can be read directly on phone by bluetooth (except for Dissolved Oxygen). All the modules are easy to change or add. Most of the sensors used are from D\+F\+Robot and Atlas Scientific, the main 2 sensor suppliers for Arduino users.
+
+
+
+For the education program, Know\+Flow is an 8 week online course and a learning group hosted on Greenseed Project platform. During the course, we cover the fundamentals of water quality, indicators of water quality, Arduino and monitoring systems and show you how to build your own monitoring system based on Arduino. In addition to the 5 included in the Know\+Flow kits, you can add other environmental sensors, such as carbon dioxide, ozone, dust, light, temperature, or humidity sensors, then add G\+PS and a communication module to connect data from a distance. Step by step demos in the course walk you through the learning process.
+
+This page is a collective information for Know\+Flow, it can also be found on github, \href{http://v.youku.com/v_show/id_XMTYzNTA1NzU1Mg==.html?spm=a2hzp.8253876.0.0&f=27620513}{\tt Youku}. Will release this series video tutorial on youtube later soon!
+
+\subsection*{Know\+Flow Hardware}
+
+A complete list of components, measurements, drawings, and other specifications can be found \href{https://docs.google.com/spreadsheets/d/1rwVUIwqTOvZiKi_0vdBPrXMIw2YB-nsFnhaVy5seE-M}{\tt here}. D\+F\+Robot also offers a \href{https://www.dfrobot.com/product-1649.html}{\tt Know\+Flow starter kit.}
+
+\paragraph*{Central Control Unit\+:}
+
+
+\begin{DoxyItemize}
+\item Arduino Uno (D\+F\+Robot Bluno in this case) and
+\item Expansion Shield (D\+F\+Robot Expansion Shield V7.\+1 in this case)
+\item real time clock circuit board \paragraph*{Water Sensors\+:}
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item pH (pH probe and pH circuit board)
+\item EC (EC probe and EC circuit board)
+\item O\+RP (O\+RP probe and O\+RP circuit board)
+\item Temperature (temperature probe and temperature circuit board)
+\item Dissolved Oxygen (DO probe, B\+NC and circuit board) \paragraph*{Data Storage\+:}
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item Micro-\/\+SD module
+\item Micro SD card \paragraph*{Fit and finish\+:}
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item Mounting plate
+\item Water proof box(200mm\+\_\+150mm\+\_\+75mm)
+\item Water proof bushing \paragraph*{Other parts\+:}
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item Wires
+\item Bread board
+\item Bolts and nuts
+\item Screws
+\item Battery
+\item Double-\/sided adhesive
+\item Write on tape
+\item Basic hand tools
+\item Spiral cable wrap
+\end{DoxyItemize}
+
+\subsection*{Installing Know\+Flow Firmware}
+
+Know\+Flow is designed for beginners. You don’t need to have experience with Arduino or software development. Know\+Flow is packaged wtth supporting software libraries to make it easier for you to enable different sensor features for your application. Feel free to post your software questions on our wiki page on public lab or github.
+
+
+\begin{DoxyEnumerate}
+\item Download Arduino I\+DE
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Download Knowflow code from \href{https://github.com/KnowFlow/KnowFlow_AWM}{\tt github}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Open \char`\"{}\+Water\+Monitor.\+ino\char`\"{} from the downloaded file with Arduino I\+DE
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Connect your Arduino Uno board
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Select Tools$>$Board\+: Arduino Uno and Tools$>$Ports\+: /dev/cu.usb...
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Click \char`\"{}\+Verify\char`\"{} then \char`\"{}\+Upload\char`\"{} the software to your board.
+\end{DoxyEnumerate}
+
+\subsection*{F\+AQ}
+
+{\bfseries Why can\textquotesingle{}t I verify the code.} The I\+DE may be missing a library, most often One\+Wire. Install the missing library library from Sketch-\/$>$include library-\/$>$manage libraries. Search \char`\"{}\+One\+Wire\char`\"{} then install it.
+
+\subsection*{F\+AQ}
+
+
+\begin{DoxyEnumerate}
+\item Q\+:why I can\textquotesingle{}t not verify the code. A\+:Some user may not verify the code. It\textquotesingle{}s maybe the I\+DE lack of some library, the most possiable is One\+Wire. Please find library One\+Wire in Sketch-\/$>$include library-\/$>$manage libraries, searth One\+Wire then install it. It should be solve the problem.
+\end{DoxyEnumerate}
+
+\subsection*{How to build Know\+Flow}
+
+Instructions are available \href{https://publiclab.org/notes/shanlter/06-08-2017/knowflow-automatic-water-meter}{\tt here.}
+
+\subsection*{How to contribute\+:}
+
+See this \href{https://help.github.com/articles/creating-a-pull-request/}{\tt tutorial.}
+\begin{DoxyEnumerate}
+\item Fork the repository!
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Create your feature branch\+: git checkout -\/b my-\/new-\/feature
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Commit your changes\+: git commit -\/am \textquotesingle{}Add some feature\textquotesingle{}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Push to the branch\+: git push origin my-\/new-\/feature
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Submit a pull request
+\end{DoxyEnumerate}
+
+\subsection*{About Branches}
+
+{\bfseries master} is the current stable release.
+
+{\bfseries development} is the research version. It has experimental features that are not fully tested. For example, I\+OT integrations, new sensors, etc.
+
+{\bfseries test} is for the team to practice with github. We will delete when we figure out how to use github. (We are newbees to github, so please forgive any stupid errors. Suggestions are welcome!) \+:)
+
+\subsection*{To DO List}
+
+
+\begin{DoxyItemize}
+\item \mbox{[}x\mbox{]} support DO Senser from D\+F\+Robot.
+\item \mbox{[} \mbox{]} add youtube video tutorial.
+\item \mbox{[} \mbox{]} Website setup. www.\+knowflow.\+org
+\item \mbox{[}x\mbox{]} Modify the construction of the files system.
+\item \mbox{[} \mbox{]} I\+OT feature.
+\item \mbox{[} \mbox{]} Calibration function
+\item \mbox{[} \mbox{]} Low power function
+\end{DoxyItemize}
+
+\subsection*{Contact}
+
+Email addresses for the Know\+Flow team.
+
+
+\begin{DoxyItemize}
+\item Rockets \href{mailto:Rockets.xia@dfrobot.com}{\tt Rockets.\+xia@dfrobot.\+com}
+\item He Shan \href{mailto:shanh0510@gmail.com}{\tt shanh0510@gmail.\+com}
+\item Lauren \href{mailto:Lauren.pan@hotmail.com}{\tt Lauren.\+pan@hotmail.\+com}
+\item Jason \href{mailto:jason.liang@dfrobot.com}{\tt jason.\+liang@dfrobot.\+com}
+\end{DoxyItemize}
+
+\subsection*{Documents}
+
+
+\begin{DoxyItemize}
+\item \href{https://publiclab.org/notes/shanlter/06-08-2017/knowflow-automatic-water-meter}{\tt Tutorial}
+\item \href{http://blog.sina.com.cn/s/blog_9f86b6d50102w9m1.html}{\tt Green\+Seed online courses}
+\item \href{http://www.dfrobot.com.cn/community/thread-26733-1-1.html}{\tt Application\+:非洲茶园水质调研}
+\item \href{https://publiclab.org/notes/MadTinker/07-31-2017/willow-creek-water-quality-monitoring}{\tt Application\+:Willow Creek Water Quality Monitoring}
+\end{DoxyItemize}
+
+\subsection*{License}
+
+All Know\+Flow related materials are released under the \href{https://creativecommons.org/licenses/by-nc-sa/4.0/}{\tt Attribution-\/\+Non\+Commercial-\/\+Share\+Alike 4.\+0 International (CC B\+Y-\/\+N\+C-\/\+SA 4.\+0)}
+
+\subsection*{This project has benefited from the support from the following funders\+:}
+
+
+\begin{DoxyItemize}
+\item Green\+Seed Foundation
+\item Mushroom Cloud Maker Space 
+\end{DoxyItemize}

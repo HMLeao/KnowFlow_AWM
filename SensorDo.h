@@ -1,5 +1,5 @@
 ﻿/*********************************************************************************************
-* SensorDo.h
+* @file SensorDo.h
 *
 * Copyright (C)    2017   [DFRobot](http://www.dfrobot.com),
 * GitHub Link :https://github.com/DFRobot/watermonitor
@@ -12,9 +12,9 @@
 *
 * Sensor driver pin：Serial,Rx(0),Tx(1)
 *
-* author  :  Jason(jason.ling@dfrobot.com)
-* version :  V1.0
-* date    :  2017-04-19
+* @author  :  Jason(jason.ling@dfrobot.com)
+* @version :  V1.0
+* @date    :  2017-04-19
 *********************************************************************************************/
 #pragma once
 #include "ISensor.h"
@@ -23,21 +23,38 @@
 class SensorDo: public ISensor
 {
 public:
+	/**
+ 	* Default constructor. Sets the instantiated HardwareSerial Serial as the Stream for the sensor.
+ 	*/ 
 	SensorDo();
+	/** 
+	* Initialize the Do Sensor with a given Stream. 
+	* @param[in] st	The Stream for comunicate with the sensor via serial interface.
+	*/
 	SensorDo(Stream& st);
 	~SensorDo();
 
 public:
-	// initialization
+	/**
+	 * Initializes the default Serial instance
+	 */
 	void  begin ();
 
-
+	/**
+	 * Initializes the DO sensor  with a given Stream
+	 * @param[in] st The Stream for comunicate with the sensor via serial interface.
+	 */ 
 	void  begin(Stream& st);
 
-	// update the sensor data
+	/**
+	 * Reads the sensor value and stores it's value.
+	 */ 
 	void  update ();
 
-	// Get the sensor data
+	/**
+	 * Read the stored value.
+	 * @return The value os the sensor.
+	 */ 
 	double getValue();
 
 private:

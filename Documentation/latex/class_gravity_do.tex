@@ -1,0 +1,74 @@
+\hypertarget{class_gravity_do}{}\section{Gravity\+Do Class Reference}
+\label{class_gravity_do}\index{Gravity\+Do@{Gravity\+Do}}
+
+
+Inheritance diagram for Gravity\+Do\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=141pt]{class_gravity_do__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Gravity\+Do\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=141pt]{class_gravity_do__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_gravity_do_a50230d3b101165f876cd595f5839e40b}{begin} ()
+\item 
+void \hyperlink{class_gravity_do_aafb8fcc3cdf0aac907288a0e5eb62b29}{update} ()
+\item 
+void {\bfseries set\+Pin} (int pin)\hypertarget{class_gravity_do_a6c4e78fad79943f86f4d5997307bd104}{}\label{class_gravity_do_a6c4e78fad79943f86f4d5997307bd104}
+
+\item 
+double \hyperlink{class_gravity_do_adaf18c91b1528ffbffceb097df12e54e}{get\+Value} ()
+\item 
+float {\bfseries get\+Temperature} () const \hypertarget{class_gravity_do_a116231bedc63f8ba338f798915b0fb94}{}\label{class_gravity_do_a116231bedc63f8ba338f798915b0fb94}
+
+\item 
+void {\bfseries set\+Temperature} (float temperature)\hypertarget{class_gravity_do_aa124f3b58a2315709b783dd64be1c276}{}\label{class_gravity_do_aa124f3b58a2315709b783dd64be1c276}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Gravity\+Do@{Gravity\+Do}!begin@{begin}}
+\index{begin@{begin}!Gravity\+Do@{Gravity\+Do}}
+\subsubsection[{\texorpdfstring{begin()}{begin()}}]{\setlength{\rightskip}{0pt plus 5cm}void Gravity\+Do\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_gravity_do_a50230d3b101165f876cd595f5839e40b}{}\label{class_gravity_do_a50230d3b101165f876cd595f5839e40b}
+This function starts the sensor. All the initial configurations must be done here 
+
+Implements \hyperlink{class_i_sensor_a88d0363e9bb83378090a021d634e03f7}{I\+Sensor}.
+
+\index{Gravity\+Do@{Gravity\+Do}!get\+Value@{get\+Value}}
+\index{get\+Value@{get\+Value}!Gravity\+Do@{Gravity\+Do}}
+\subsubsection[{\texorpdfstring{get\+Value()}{getValue()}}]{\setlength{\rightskip}{0pt plus 5cm}double Gravity\+Do\+::get\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_gravity_do_adaf18c91b1528ffbffceb097df12e54e}{}\label{class_gravity_do_adaf18c91b1528ffbffceb097df12e54e}
+This function must return the sensor data. You should run \hyperlink{class_gravity_do_aafb8fcc3cdf0aac907288a0e5eb62b29}{update()} just before \hyperlink{class_gravity_do_adaf18c91b1528ffbffceb097df12e54e}{get\+Value()} to return a recent and valid data. 
+
+Implements \hyperlink{class_i_sensor_a9972b325fb329e6eaefd79e562ad7776}{I\+Sensor}.
+
+\index{Gravity\+Do@{Gravity\+Do}!update@{update}}
+\index{update@{update}!Gravity\+Do@{Gravity\+Do}}
+\subsubsection[{\texorpdfstring{update()}{update()}}]{\setlength{\rightskip}{0pt plus 5cm}void Gravity\+Do\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_gravity_do_aafb8fcc3cdf0aac907288a0e5eb62b29}{}\label{class_gravity_do_aafb8fcc3cdf0aac907288a0e5eb62b29}
+This function updates the sensor value and stores the value, so that it\textquotesingle{}s ready to return data 
+
+Implements \hyperlink{class_i_sensor_a53606e8b3764eda1b4b0c00aa983e264}{I\+Sensor}.
+

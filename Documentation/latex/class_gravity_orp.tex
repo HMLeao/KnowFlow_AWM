@@ -1,0 +1,77 @@
+\hypertarget{class_gravity_orp}{}\section{Gravity\+Orp Class Reference}
+\label{class_gravity_orp}\index{Gravity\+Orp@{Gravity\+Orp}}
+
+
+Inheritance diagram for Gravity\+Orp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=144pt]{class_gravity_orp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Gravity\+Orp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=144pt]{class_gravity_orp__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_gravity_orp_a03543b2abbe0be53f2dfb799b22b3aef}{begin} ()
+\item 
+void \hyperlink{class_gravity_orp_aa39d1bf33bcf7f4f415fd51d8129d15a}{update} ()
+\item 
+double \hyperlink{class_gravity_orp_a2b4da109c95a3415fc70b9523bd13700}{get\+Value} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries orp\+Sensor\+Pin}\hypertarget{class_gravity_orp_a3c70709c954fdba46ff218ed9084d16f}{}\label{class_gravity_orp_a3c70709c954fdba46ff218ed9084d16f}
+
+\item 
+double {\bfseries voltage}\hypertarget{class_gravity_orp_a0d0b0f34cb37014fd144a800388a17af}{}\label{class_gravity_orp_a0d0b0f34cb37014fd144a800388a17af}
+
+\item 
+float {\bfseries offset}\hypertarget{class_gravity_orp_a298092950afeb11b7c9e742887cb4b1f}{}\label{class_gravity_orp_a298092950afeb11b7c9e742887cb4b1f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Gravity\+Orp@{Gravity\+Orp}!begin@{begin}}
+\index{begin@{begin}!Gravity\+Orp@{Gravity\+Orp}}
+\subsubsection[{\texorpdfstring{begin()}{begin()}}]{\setlength{\rightskip}{0pt plus 5cm}void Gravity\+Orp\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_gravity_orp_a03543b2abbe0be53f2dfb799b22b3aef}{}\label{class_gravity_orp_a03543b2abbe0be53f2dfb799b22b3aef}
+This function starts the sensor. All the initial configurations must be done here 
+
+Implements \hyperlink{class_i_sensor_a88d0363e9bb83378090a021d634e03f7}{I\+Sensor}.
+
+\index{Gravity\+Orp@{Gravity\+Orp}!get\+Value@{get\+Value}}
+\index{get\+Value@{get\+Value}!Gravity\+Orp@{Gravity\+Orp}}
+\subsubsection[{\texorpdfstring{get\+Value()}{getValue()}}]{\setlength{\rightskip}{0pt plus 5cm}double Gravity\+Orp\+::get\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_gravity_orp_a2b4da109c95a3415fc70b9523bd13700}{}\label{class_gravity_orp_a2b4da109c95a3415fc70b9523bd13700}
+This function must return the sensor data. You should run \hyperlink{class_gravity_orp_aa39d1bf33bcf7f4f415fd51d8129d15a}{update()} just before \hyperlink{class_gravity_orp_a2b4da109c95a3415fc70b9523bd13700}{get\+Value()} to return a recent and valid data. 
+
+Implements \hyperlink{class_i_sensor_a9972b325fb329e6eaefd79e562ad7776}{I\+Sensor}.
+
+\index{Gravity\+Orp@{Gravity\+Orp}!update@{update}}
+\index{update@{update}!Gravity\+Orp@{Gravity\+Orp}}
+\subsubsection[{\texorpdfstring{update()}{update()}}]{\setlength{\rightskip}{0pt plus 5cm}void Gravity\+Orp\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_gravity_orp_aa39d1bf33bcf7f4f415fd51d8129d15a}{}\label{class_gravity_orp_aa39d1bf33bcf7f4f415fd51d8129d15a}
+This function updates the sensor value and stores the value, so that it\textquotesingle{}s ready to return data 
+
+Implements \hyperlink{class_i_sensor_a53606e8b3764eda1b4b0c00aa983e264}{I\+Sensor}.
+

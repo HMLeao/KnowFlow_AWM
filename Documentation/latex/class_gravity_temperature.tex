@@ -1,0 +1,77 @@
+\hypertarget{class_gravity_temperature}{}\section{Gravity\+Temperature Class Reference}
+\label{class_gravity_temperature}\index{Gravity\+Temperature@{Gravity\+Temperature}}
+
+
+Inheritance diagram for Gravity\+Temperature\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{class_gravity_temperature__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Gravity\+Temperature\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{class_gravity_temperature__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Gravity\+Temperature} (int pin)\hypertarget{class_gravity_temperature_a1156c03146096ebd11dfeb12d047b017}{}\label{class_gravity_temperature_a1156c03146096ebd11dfeb12d047b017}
+
+\item 
+void \hyperlink{class_gravity_temperature_a4b0e6bba015c69a153a85cc8221dee2f}{begin} ()
+\item 
+void \hyperlink{class_gravity_temperature_aa7a3463559fe46fa4471f779fb5ffdce}{update} ()
+\item 
+double \hyperlink{class_gravity_temperature_a7ee39e7ab5521f9dcbdea543c26c3a26}{get\+Value} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries temperature\+Pin}\hypertarget{class_gravity_temperature_a12137835ad1ee47f2e5d940d74c02628}{}\label{class_gravity_temperature_a12137835ad1ee47f2e5d940d74c02628}
+
+\item 
+double {\bfseries temperature}\hypertarget{class_gravity_temperature_a6a4ea3f7581c3d3f18269492c7cc5c85}{}\label{class_gravity_temperature_a6a4ea3f7581c3d3f18269492c7cc5c85}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Gravity\+Temperature@{Gravity\+Temperature}!begin@{begin}}
+\index{begin@{begin}!Gravity\+Temperature@{Gravity\+Temperature}}
+\subsubsection[{\texorpdfstring{begin()}{begin()}}]{\setlength{\rightskip}{0pt plus 5cm}void Gravity\+Temperature\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_gravity_temperature_a4b0e6bba015c69a153a85cc8221dee2f}{}\label{class_gravity_temperature_a4b0e6bba015c69a153a85cc8221dee2f}
+This function starts the sensor. All the initial configurations must be done here 
+
+Implements \hyperlink{class_i_sensor_a88d0363e9bb83378090a021d634e03f7}{I\+Sensor}.
+
+\index{Gravity\+Temperature@{Gravity\+Temperature}!get\+Value@{get\+Value}}
+\index{get\+Value@{get\+Value}!Gravity\+Temperature@{Gravity\+Temperature}}
+\subsubsection[{\texorpdfstring{get\+Value()}{getValue()}}]{\setlength{\rightskip}{0pt plus 5cm}double Gravity\+Temperature\+::get\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_gravity_temperature_a7ee39e7ab5521f9dcbdea543c26c3a26}{}\label{class_gravity_temperature_a7ee39e7ab5521f9dcbdea543c26c3a26}
+This function must return the sensor data. You should run \hyperlink{class_gravity_temperature_aa7a3463559fe46fa4471f779fb5ffdce}{update()} just before \hyperlink{class_gravity_temperature_a7ee39e7ab5521f9dcbdea543c26c3a26}{get\+Value()} to return a recent and valid data. 
+
+Implements \hyperlink{class_i_sensor_a9972b325fb329e6eaefd79e562ad7776}{I\+Sensor}.
+
+\index{Gravity\+Temperature@{Gravity\+Temperature}!update@{update}}
+\index{update@{update}!Gravity\+Temperature@{Gravity\+Temperature}}
+\subsubsection[{\texorpdfstring{update()}{update()}}]{\setlength{\rightskip}{0pt plus 5cm}void Gravity\+Temperature\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_gravity_temperature_aa7a3463559fe46fa4471f779fb5ffdce}{}\label{class_gravity_temperature_aa7a3463559fe46fa4471f779fb5ffdce}
+This function updates the sensor value and stores the value, so that it\textquotesingle{}s ready to return data 
+
+Implements \hyperlink{class_i_sensor_a53606e8b3764eda1b4b0c00aa983e264}{I\+Sensor}.
+
