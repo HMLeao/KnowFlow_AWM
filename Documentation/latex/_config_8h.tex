@@ -1,0 +1,75 @@
+\hypertarget{_config_8h}{}\section{/home/henrique/arduino-\/1.8.9/libraries/\+Know\+Flow/\+Config.h File Reference}
+\label{_config_8h}\index{/home/henrique/arduino-\/1.\+8.\+9/libraries/\+Know\+Flow/\+Config.\+h@{/home/henrique/arduino-\/1.\+8.\+9/libraries/\+Know\+Flow/\+Config.\+h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_config_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_config_8h_a36f25ff2fdc455f9ae74e30b2713935e}{D\+E\+B\+U\+G\+\_\+\+A\+VR}
+\item 
+\#define \hyperlink{_config_8h_a47cea535cdbbf8046cf11fd1eee12fe5}{A\+R\+R\+A\+Y\+L\+E\+N\+G\+TH}~10\hypertarget{_config_8h_a47cea535cdbbf8046cf11fd1eee12fe5}{}\label{_config_8h_a47cea535cdbbf8046cf11fd1eee12fe5}
+
+\begin{DoxyCompactList}\small\item\em The maximum length of the sensor filter array. \end{DoxyCompactList}\item 
+\#define \hyperlink{_config_8h_a85c19c2498565182d196f9b145035fde}{S\+D\+U\+P\+D\+A\+T\+E\+D\+A\+T\+A\+T\+I\+ME}~60000\hypertarget{_config_8h_a85c19c2498565182d196f9b145035fde}{}\label{_config_8h_a85c19c2498565182d196f9b145035fde}
+
+\begin{DoxyCompactList}\small\item\em SD card update data time, 60,000 is 1 minute. \end{DoxyCompactList}\item 
+\#define \hyperlink{_config_8h_ad85919ae5261767d33875fe5cb0df6d8}{S\+E\+L\+E\+C\+T\+EC}\hypertarget{_config_8h_ad85919ae5261767d33875fe5cb0df6d8}{}\label{_config_8h_ad85919ae5261767d33875fe5cb0df6d8}
+
+\begin{DoxyCompactList}\small\item\em EC sensor is selected by default, comment this line to use T\+DS sensor. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___p_i_n___s_e_t_t_i_n_g_s_gabaa87b795b67d2f09dcda7e30c939e2b}{D\+O\+P\+IN}~A0
+\item 
+\#define \hyperlink{group___p_i_n___s_e_t_t_i_n_g_s_ga9eea325c048cdcab4c3b5f9771f7b512}{E\+C\+P\+IN}~A1
+\item 
+\#define \hyperlink{group___p_i_n___s_e_t_t_i_n_g_s_gaef0cf2dcc531d0afe308cb1ed8ab951a}{T\+D\+S\+P\+IN}~A1
+\item 
+\#define \hyperlink{group___p_i_n___s_e_t_t_i_n_g_s_ga992fbb764f982b28e19730a8327b67a6}{P\+H\+P\+IN}~A2
+\item 
+\#define \hyperlink{group___p_i_n___s_e_t_t_i_n_g_s_ga2f2dcc0d9b12ba6a368d780187c98017}{O\+R\+P\+P\+IN}~A3
+\item 
+\#define \hyperlink{group___p_i_n___s_e_t_t_i_n_g_s_ga4ba38e7a40eda1fcddf502aa2265c313}{T\+E\+M\+P\+P\+IN}~5
+\item 
+\#define \hyperlink{_config_8h_a2a353ec5131082cab500ebbfd471615a}{P\+H\+O\+F\+F\+S\+ET}~0.\+12
+\item 
+\#define {\bfseries E\+C\+K\+V\+A\+L\+UE}~0.\+6\hypertarget{_config_8h_a5d6b9565a7ed78be7e49625169ba87e5}{}\label{_config_8h_a5d6b9565a7ed78be7e49625169ba87e5}
+
+\item 
+\#define \hyperlink{_config_8h_a462faefe5424328c9f713503ecafeb6f}{S\+E\+N\+S\+O\+R\+C\+O\+U\+NT}~5
+\item 
+\#define \hyperlink{group___c_a_l___c_o_e_f_f_gabe5c1bc9018d7fb405b0f69c568d866b}{P\+H\+\_\+\+M\+\_\+\+C\+O\+E\+FF}~4.\+411
+\item 
+\#define \hyperlink{group___c_a_l___c_o_e_f_f_ga3d9cbf54f9b4b5ac4915d7d176e77bfe}{P\+H\+\_\+\+B\+\_\+\+C\+O\+E\+FF}~-\/0.\+014
+\item 
+\#define \hyperlink{group___c_a_l___c_o_e_f_f_gafd22da5c5584608227366042cdc86166}{O\+R\+P\+\_\+\+O\+F\+F\+S\+ET}~8.\+79
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_config_8h_a524458713131934a168df3f7976140eb}{Sensor\+Number} \{ \\*
+{\bfseries ph\+Sensor} = 0, 
+{\bfseries temperature\+Sensor}, 
+{\bfseries do\+Sensor}, 
+{\bfseries ec\+Sensor}, 
+\\*
+{\bfseries tds\+Sensor} = 3, 
+{\bfseries orp\+Sensor}
+ \}\hypertarget{_config_8h_a524458713131934a168df3f7976140eb}{}\label{_config_8h_a524458713131934a168df3f7976140eb}
+\begin{DoxyCompactList}\small\item\em The sensor corresponds to the array number, ph=0, temperature=1..., the maximum number is S\+E\+N\+S\+O\+R\+C\+O\+U\+N\+T-\/1. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{Config.\+h@{Config.\+h}!D\+E\+B\+U\+G\+\_\+\+A\+VR@{D\+E\+B\+U\+G\+\_\+\+A\+VR}}
+\index{D\+E\+B\+U\+G\+\_\+\+A\+VR@{D\+E\+B\+U\+G\+\_\+\+A\+VR}!Config.\+h@{Config.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+A\+VR}{DEBUG_AVR}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+A\+VR}\hypertarget{_config_8h_a36f25ff2fdc455f9ae74e30b2713935e}{}\label{_config_8h_a36f25ff2fdc455f9ae74e30b2713935e}
+Serial print switch \index{Config.\+h@{Config.\+h}!P\+H\+O\+F\+F\+S\+ET@{P\+H\+O\+F\+F\+S\+ET}}
+\index{P\+H\+O\+F\+F\+S\+ET@{P\+H\+O\+F\+F\+S\+ET}!Config.\+h@{Config.\+h}}
+\subsubsection[{\texorpdfstring{P\+H\+O\+F\+F\+S\+ET}{PHOFFSET}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+H\+O\+F\+F\+S\+ET~0.\+12}\hypertarget{_config_8h_a2a353ec5131082cab500ebbfd471615a}{}\label{_config_8h_a2a353ec5131082cab500ebbfd471615a}
+Set sensor offset (calibration data) \index{Config.\+h@{Config.\+h}!S\+E\+N\+S\+O\+R\+C\+O\+U\+NT@{S\+E\+N\+S\+O\+R\+C\+O\+U\+NT}}
+\index{S\+E\+N\+S\+O\+R\+C\+O\+U\+NT@{S\+E\+N\+S\+O\+R\+C\+O\+U\+NT}!Config.\+h@{Config.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+C\+O\+U\+NT}{SENSORCOUNT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+C\+O\+U\+NT~5}\hypertarget{_config_8h_a462faefe5424328c9f713503ecafeb6f}{}\label{_config_8h_a462faefe5424328c9f713503ecafeb6f}
+The maximum number of sensors 

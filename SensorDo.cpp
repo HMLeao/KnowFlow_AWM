@@ -26,13 +26,14 @@ SensorDo::SensorDo()
 
 
 //********************************************************************************************
-// Overrloading the constructor function. 
+// Overloading the constructor function. 
 // Function Description: Initializes the sensor, and gives it a Stream already instantiated and 
 // 	with the baud rate set to 9600 baud.
 //********************************************************************************************
 SensorDo::SensorDo(Stream& st)
 {
-	this->inputStream = &st;
+	//this->inputStream = &st;
+	begin(st);
 }
 
 SensorDo::~SensorDo()

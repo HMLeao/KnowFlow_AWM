@@ -1,0 +1,114 @@
+\hypertarget{class_sensor_do}{}\section{Sensor\+Do Class Reference}
+\label{class_sensor_do}\index{Sensor\+Do@{Sensor\+Do}}
+
+
+Inheritance diagram for Sensor\+Do\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=140pt]{class_sensor_do__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sensor\+Do\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=140pt]{class_sensor_do__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_sensor_do_a04dabd201f2ceea94caea74533893790}{Sensor\+Do} ()
+\item 
+\hyperlink{class_sensor_do_a79740d3a503eb4668805572fa03962cd}{Sensor\+Do} (Stream \&st)
+\item 
+void \hyperlink{class_sensor_do_a211a11e96355ab492b1fa4b45a9d9f8c}{begin} ()
+\item 
+void \hyperlink{class_sensor_do_ab3a8e46368a78e5252e10ffd57caa6ee}{begin} (Stream \&st)
+\item 
+void \hyperlink{class_sensor_do_ae0d28d943e612b1a840a0b5e5bd5566d}{update} ()
+\item 
+double \hyperlink{class_sensor_do_a811d2c2e9dac3246763889226955a064}{get\+Value} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Sensor\+Do@{Sensor\+Do}!Sensor\+Do@{Sensor\+Do}}
+\index{Sensor\+Do@{Sensor\+Do}!Sensor\+Do@{Sensor\+Do}}
+\subsubsection[{\texorpdfstring{Sensor\+Do()}{SensorDo()}}]{\setlength{\rightskip}{0pt plus 5cm}Sensor\+Do\+::\+Sensor\+Do (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sensor_do_a04dabd201f2ceea94caea74533893790}{}\label{class_sensor_do_a04dabd201f2ceea94caea74533893790}
+Default constructor. Sets the instantiated Hardware\+Serial Serial as the Stream for the sensor. \index{Sensor\+Do@{Sensor\+Do}!Sensor\+Do@{Sensor\+Do}}
+\index{Sensor\+Do@{Sensor\+Do}!Sensor\+Do@{Sensor\+Do}}
+\subsubsection[{\texorpdfstring{Sensor\+Do(\+Stream \&st)}{SensorDo(Stream &st)}}]{\setlength{\rightskip}{0pt plus 5cm}Sensor\+Do\+::\+Sensor\+Do (
+\begin{DoxyParamCaption}
+\item[{Stream \&}]{st}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sensor_do_a79740d3a503eb4668805572fa03962cd}{}\label{class_sensor_do_a79740d3a503eb4668805572fa03962cd}
+Initialize the Do Sensor with a given Stream. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em st} & The Stream for comunicate with the sensor via serial interface. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Sensor\+Do@{Sensor\+Do}!begin@{begin}}
+\index{begin@{begin}!Sensor\+Do@{Sensor\+Do}}
+\subsubsection[{\texorpdfstring{begin()}{begin()}}]{\setlength{\rightskip}{0pt plus 5cm}void Sensor\+Do\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_sensor_do_a211a11e96355ab492b1fa4b45a9d9f8c}{}\label{class_sensor_do_a211a11e96355ab492b1fa4b45a9d9f8c}
+Initializes the default Serial instance 
+
+Implements \hyperlink{class_i_sensor}{I\+Sensor}.
+
+\index{Sensor\+Do@{Sensor\+Do}!begin@{begin}}
+\index{begin@{begin}!Sensor\+Do@{Sensor\+Do}}
+\subsubsection[{\texorpdfstring{begin(\+Stream \&st)}{begin(Stream &st)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sensor\+Do\+::begin (
+\begin{DoxyParamCaption}
+\item[{Stream \&}]{st}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sensor_do_ab3a8e46368a78e5252e10ffd57caa6ee}{}\label{class_sensor_do_ab3a8e46368a78e5252e10ffd57caa6ee}
+Initializes the DO sensor with a given Stream 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em st} & The Stream for comunicate with the sensor via serial interface. \\
+\hline
+\end{DoxyParams}
+\index{Sensor\+Do@{Sensor\+Do}!get\+Value@{get\+Value}}
+\index{get\+Value@{get\+Value}!Sensor\+Do@{Sensor\+Do}}
+\subsubsection[{\texorpdfstring{get\+Value()}{getValue()}}]{\setlength{\rightskip}{0pt plus 5cm}double Sensor\+Do\+::get\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_sensor_do_a811d2c2e9dac3246763889226955a064}{}\label{class_sensor_do_a811d2c2e9dac3246763889226955a064}
+Read the stored value. \begin{DoxyReturn}{Returns}
+The value os the sensor. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_i_sensor}{I\+Sensor}.
+
+\index{Sensor\+Do@{Sensor\+Do}!update@{update}}
+\index{update@{update}!Sensor\+Do@{Sensor\+Do}}
+\subsubsection[{\texorpdfstring{update()}{update()}}]{\setlength{\rightskip}{0pt plus 5cm}void Sensor\+Do\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_sensor_do_ae0d28d943e612b1a840a0b5e5bd5566d}{}\label{class_sensor_do_ae0d28d943e612b1a840a0b5e5bd5566d}
+Reads the sensor value and stores it\textquotesingle{}s value. 
+
+Implements \hyperlink{class_i_sensor}{I\+Sensor}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/henrique/arduino-\/1.\+8.\+9/libraries/\+Know\+Flow/Sensor\+Do.\+h\item 
+/home/henrique/arduino-\/1.\+8.\+9/libraries/\+Know\+Flow/Sensor\+Do.\+cpp\end{DoxyCompactItemize}

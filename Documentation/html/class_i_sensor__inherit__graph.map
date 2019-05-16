@@ -1,0 +1,9 @@
+<map id="ISensor" name="ISensor">
+<area shape="rect" id="node2" href="$class_gravity_do.html" title="GravityDo" alt="" coords="5,80,87,107"/>
+<area shape="rect" id="node3" href="$class_gravity_ec.html" title="GravityEc" alt="" coords="111,80,191,107"/>
+<area shape="rect" id="node4" href="$class_gravity_orp.html" title="GravityOrp" alt="" coords="215,80,301,107"/>
+<area shape="rect" id="node5" href="$class_gravity_ph.html" title="GravityPh" alt="" coords="325,80,405,107"/>
+<area shape="rect" id="node6" href="$class_gravity_t_d_s.html" title="GravityTDS" alt="" coords="429,80,519,107"/>
+<area shape="rect" id="node7" href="$class_gravity_temperature.html" title="GravityTemperature" alt="" coords="544,80,681,107"/>
+<area shape="rect" id="node8" href="$class_sensor_do.html" title="SensorDo" alt="" coords="706,80,786,107"/>
+</map>
