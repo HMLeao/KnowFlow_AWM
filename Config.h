@@ -26,8 +26,7 @@
 #define PHOFFSET 0.12	//offset for the Ph sensor
 #define ECKVALUE 0.6	//K constant value for the EC sensor
 
-//The maximum number of sensors
-#define SENSORCOUNT 5
+
 
 //calibration coefficients (slope and y-axis intercept) to give more accurate values for the sensors
 #define PH_M_COEFF	4.411
@@ -36,6 +35,29 @@
 #define ORP_OFFSET	8.79
 
 
+/**
+ * @defgroup ARRAY_DEFS Array definitions
+ * @brief definitions for ISensor array manipulations
+ * @{
+ */ 
+/**The maximum number of sensors*/
+#define SENSORCOUNT 5
+/** PH sensor index */
+#define PH_INDEX	0
+/** Temperature sensor index*/
+#define TEMP_INDEX	1
+/** Dissolved oxygen index*/
+#define DO_INDEX	2
+/** Conductivity sensor index*/
+#define EC_INDEX	3
+/** TDS index*/
+#define TDS_INDEX	3
+/** ORP sensor index*/
+#define ORP_INDEX	4
+
+/**
+ * @}
+ */ 
 //The sensor corresponds to the array number, ph=0, temperature=1..., the maximum number is SENSORCOUNT-1
 enum SensorNumber
 {
