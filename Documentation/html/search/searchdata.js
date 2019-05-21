@@ -4,10 +4,9 @@ var indexSectionsWithContent =
   1: "dgis",
   2: "ci",
   3: "bgsu",
-  4: "s",
-  5: "adps",
-  6: "cs",
-  7: "r"
+  4: "adps",
+  5: "acs",
+  6: "r"
 };
 
 var indexSectionNames =
@@ -16,10 +15,9 @@ var indexSectionNames =
   1: "classes",
   2: "files",
   3: "functions",
-  4: "enums",
-  5: "defines",
-  6: "groups",
-  7: "pages"
+  4: "defines",
+  5: "groups",
+  6: "pages"
 };
 
 var indexSectionLabels =
@@ -28,9 +26,8 @@ var indexSectionLabels =
   1: "Classes",
   2: "Files",
   3: "Functions",
-  4: "Enumerations",
-  5: "Macros",
-  6: "Modules",
-  7: "Pages"
+  4: "Macros",
+  5: "Modules",
+  6: "Pages"
 };
 

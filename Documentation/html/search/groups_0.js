@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['calibration_20coefficients',['calibration coefficients',['../group___c_a_l___c_o_e_f_f.html',1,'']]]
+  ['array_20definitions',['Array definitions',['../group___a_r_r_a_y___d_e_f_s.html',1,'']]]
 ];

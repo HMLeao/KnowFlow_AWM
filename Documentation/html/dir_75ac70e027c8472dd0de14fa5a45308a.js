@@ -15,5 +15,6 @@ var dir_75ac70e027c8472dd0de14fa5a45308a =
     ] ],
     [ "KnowFlow.h", "_know_flow_8h_source.html", null ],
     [ "SdService.h", "_sd_service_8h_source.html", null ],
-    [ "SensorDo.h", "_sensor_do_8h_source.html", null ]
+    [ "SensorDo.h", "_sensor_do_8h_source.html", null ],
+    [ "SensorLog.h", "_sensor_log_8h_source.html", null ]
 ];

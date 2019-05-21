@@ -39,10 +39,9 @@ public:
 	 * Initializes the default Serial instance
 	 */
 	void  begin ();
-
 	/**
 	 * Initializes the DO sensor  with a given Stream
-	 * @param[in] st The Stream for comunicate with the sensor via serial interface.
+	 * @param[in] st The Stream for comunicating with the sensor via serial interface.
 	 */ 
 	void  begin(Stream& st);
 

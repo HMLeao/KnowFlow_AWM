@@ -1,6 +1,7 @@
 \hypertarget{_config_8h}{}\section{/home/henrique/arduino-\/1.8.9/libraries/\+Know\+Flow/\+Config.h File Reference}
 \label{_config_8h}\index{/home/henrique/arduino-\/1.\+8.\+9/libraries/\+Know\+Flow/\+Config.\+h@{/home/henrique/arduino-\/1.\+8.\+9/libraries/\+Know\+Flow/\+Config.\+h}}
-This graph shows which files directly or indirectly include this file\+:\nopagebreak
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -38,18 +39,30 @@ This graph shows which files directly or indirectly include this file\+:\nopageb
 \#define {\bfseries E\+C\+K\+V\+A\+L\+UE}~0.\+6\hypertarget{_config_8h_a5d6b9565a7ed78be7e49625169ba87e5}{}\label{_config_8h_a5d6b9565a7ed78be7e49625169ba87e5}
 
 \item 
-\#define \hyperlink{_config_8h_a462faefe5424328c9f713503ecafeb6f}{S\+E\+N\+S\+O\+R\+C\+O\+U\+NT}~5
-\item 
 \#define \hyperlink{group___c_a_l___c_o_e_f_f_gabe5c1bc9018d7fb405b0f69c568d866b}{P\+H\+\_\+\+M\+\_\+\+C\+O\+E\+FF}~4.\+411
 \item 
 \#define \hyperlink{group___c_a_l___c_o_e_f_f_ga3d9cbf54f9b4b5ac4915d7d176e77bfe}{P\+H\+\_\+\+B\+\_\+\+C\+O\+E\+FF}~-\/0.\+014
 \item 
 \#define \hyperlink{group___c_a_l___c_o_e_f_f_gafd22da5c5584608227366042cdc86166}{O\+R\+P\+\_\+\+O\+F\+F\+S\+ET}~8.\+79
+\item 
+\#define \hyperlink{group___a_r_r_a_y___d_e_f_s_ga462faefe5424328c9f713503ecafeb6f}{S\+E\+N\+S\+O\+R\+C\+O\+U\+NT}~5
+\item 
+\#define \hyperlink{group___a_r_r_a_y___d_e_f_s_gaad8cbdb71736e79d15b2699c50b5dbfd}{P\+H\+\_\+\+I\+N\+D\+EX}~0
+\item 
+\#define \hyperlink{group___a_r_r_a_y___d_e_f_s_ga87282d20e6a935e76f14d903959695b5}{T\+E\+M\+P\+\_\+\+I\+N\+D\+EX}~1
+\item 
+\#define \hyperlink{group___a_r_r_a_y___d_e_f_s_gae984a0da3b36fc26bc8c5c79ac1fc1fa}{D\+O\+\_\+\+I\+N\+D\+EX}~2
+\item 
+\#define \hyperlink{group___a_r_r_a_y___d_e_f_s_ga01f1891f3723e0d0f6466d0afadf8e16}{E\+C\+\_\+\+I\+N\+D\+EX}~3
+\item 
+\#define \hyperlink{group___a_r_r_a_y___d_e_f_s_ga855d2056682afca7f6fab69afcc65b6a}{T\+D\+S\+\_\+\+I\+N\+D\+EX}~3
+\item 
+\#define \hyperlink{group___a_r_r_a_y___d_e_f_s_ga7104f69c9df0ea675fddbf7cf1b4ec22}{O\+R\+P\+\_\+\+I\+N\+D\+EX}~4
 \end{DoxyCompactItemize}
 \subsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
-enum \hyperlink{_config_8h_a524458713131934a168df3f7976140eb}{Sensor\+Number} \{ \\*
+enum {\bfseries Sensor\+Number} \{ \\*
 {\bfseries ph\+Sensor} = 0, 
 {\bfseries temperature\+Sensor}, 
 {\bfseries do\+Sensor}, 
@@ -58,7 +71,7 @@ enum \hyperlink{_config_8h_a524458713131934a168df3f7976140eb}{Sensor\+Number} \{
 {\bfseries tds\+Sensor} = 3, 
 {\bfseries orp\+Sensor}
  \}\hypertarget{_config_8h_a524458713131934a168df3f7976140eb}{}\label{_config_8h_a524458713131934a168df3f7976140eb}
-\begin{DoxyCompactList}\small\item\em The sensor corresponds to the array number, ph=0, temperature=1..., the maximum number is S\+E\+N\+S\+O\+R\+C\+O\+U\+N\+T-\/1. \end{DoxyCompactList}
+
 \end{DoxyCompactItemize}
 
 
@@ -69,7 +82,4 @@ enum \hyperlink{_config_8h_a524458713131934a168df3f7976140eb}{Sensor\+Number} \{
 Serial print switch \index{Config.\+h@{Config.\+h}!P\+H\+O\+F\+F\+S\+ET@{P\+H\+O\+F\+F\+S\+ET}}
 \index{P\+H\+O\+F\+F\+S\+ET@{P\+H\+O\+F\+F\+S\+ET}!Config.\+h@{Config.\+h}}
 \subsubsection[{\texorpdfstring{P\+H\+O\+F\+F\+S\+ET}{PHOFFSET}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+H\+O\+F\+F\+S\+ET~0.\+12}\hypertarget{_config_8h_a2a353ec5131082cab500ebbfd471615a}{}\label{_config_8h_a2a353ec5131082cab500ebbfd471615a}
-Set sensor offset (calibration data) \index{Config.\+h@{Config.\+h}!S\+E\+N\+S\+O\+R\+C\+O\+U\+NT@{S\+E\+N\+S\+O\+R\+C\+O\+U\+NT}}
-\index{S\+E\+N\+S\+O\+R\+C\+O\+U\+NT@{S\+E\+N\+S\+O\+R\+C\+O\+U\+NT}!Config.\+h@{Config.\+h}}
-\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+C\+O\+U\+NT}{SENSORCOUNT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+C\+O\+U\+NT~5}\hypertarget{_config_8h_a462faefe5424328c9f713503ecafeb6f}{}\label{_config_8h_a462faefe5424328c9f713503ecafeb6f}
-The maximum number of sensors 
+Set sensor offset (calibration data) 

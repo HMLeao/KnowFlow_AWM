@@ -12,5 +12,6 @@ var hierarchy =
       [ "GravityTemperature", "class_gravity_temperature.html", null ],
       [ "SensorDo", "class_sensor_do.html", null ]
     ] ],
-    [ "SdService", "class_sd_service.html", null ]
+    [ "SdService", "class_sd_service.html", null ],
+    [ "SensorLog", "class_sensor_log.html", null ]
 ];

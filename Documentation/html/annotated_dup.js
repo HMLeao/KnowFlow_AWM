@@ -11,5 +11,6 @@ var annotated_dup =
     [ "GravityTemperature", "class_gravity_temperature.html", "class_gravity_temperature" ],
     [ "ISensor", "class_i_sensor.html", "class_i_sensor" ],
     [ "SdService", "class_sd_service.html", "class_sd_service" ],
-    [ "SensorDo", "class_sensor_do.html", "class_sensor_do" ]
+    [ "SensorDo", "class_sensor_do.html", "class_sensor_do" ],
+    [ "SensorLog", "class_sensor_log.html", "class_sensor_log" ]
 ];
