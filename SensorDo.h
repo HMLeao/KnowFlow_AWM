@@ -58,7 +58,7 @@ public:
 
 private:
 
-	String sensorstring = "";
+	String sensorString = "";
 
 	Stream *inputStream;
 	// do the data
