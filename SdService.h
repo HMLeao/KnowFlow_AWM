@@ -30,6 +30,7 @@
 #include "ISensor.h"
 #include <SD.h>
 #include "string.h"
+#include "GravityRtc.h"
 
 class SdService
 {
@@ -37,7 +38,7 @@ class SdService
 public:
 	int chipSelect;
 public:
-	SdService(ISensor* gravitySensor[]);
+	SdService(ISensor* gravitySensor[], GravityRtc& newRtc);
 	~ SdService ();
 
 	// initialization
@@ -49,9 +50,13 @@ public:
 private:
 	// points to the pointer to the array of sensors
 	ISensor** gravitySensor;
-	//String dataString ;
+	//String dataString;
 
 	bool sdReady = false;
+
+	//String sensorstring;
+
+	GravityRtc rtc;
 
 	// file handle
 	File dataFile;

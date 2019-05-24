@@ -44,15 +44,16 @@ const int CsPin = 4;
 #include "string.h"
 #include <SPI.h>
 #include "Debug.h"
-#include "GravityRtc.h"
 
-extern GravityRtc rtc;
+
 String dataString = "";
 
+//extern GravityRtc rtc;
 
-SdService :: SdService (ISensor * gravitySensor []): chipSelect (CsPin), sdDataUpdateTime ( 0 )
+SdService :: SdService (ISensor* gravitySensor[], GravityRtc& newRtc): chipSelect (CsPin), sdDataUpdateTime ( 0 )
 {
 	this->gravitySensor = gravitySensor;
+	this->rtc = newRtc;
 }
 
 
@@ -97,7 +98,7 @@ void SdService::update()
 {
 	if (sdReady && millis() - sdDataUpdateTime > 2000) //2000ms
 	{
-		Serial.println("Write Sd card");
+		//Serial.println("Write Sd card");
 		dataString = "";
 		// Year Month Day Hours Minute Seconds
 		dataString += String(rtc.getYear(),10);
