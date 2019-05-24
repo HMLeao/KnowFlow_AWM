@@ -86,6 +86,7 @@ void SdService::begin()
 		dataFile.println("Year,Month,Day,Hour,Minues,Second,pH,temp(C),DO(mg/l),ec(s/m),orp(mv)");
 		dataFile.close();
 	}
+	rtc.setup();
 
 }
 
@@ -96,9 +97,10 @@ void SdService::begin()
 //********************************************************************************************
 void SdService::update()
 {
+	rtc.read();
 	if (sdReady && millis() - sdDataUpdateTime > 2000) //2000ms
 	{
-		//Serial.println("Write Sd card");
+		Serial.println("Write Sd card");
 		dataString = "";
 		// Year Month Day Hours Minute Seconds
 		dataString += String(rtc.getYear(),10);
