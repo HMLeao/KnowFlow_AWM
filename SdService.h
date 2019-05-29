@@ -23,7 +23,15 @@
 * author  :  Jason(jason.ling@dfrobot.com)
 * version :  V1.0
 * date    :  2017-04-19
-**********************************************************************/
+*****************
+*****************************************************/
+
+/**
+ * @file SdService.h
+ * @brief This class generates a .csv and stores it at the SD card. The .csv file holds a table with all the data
+ *	readen from the sensors, generating a log file. The SdService uses a RTC to get a timestamp
+ * 
+ */
 
 #pragma once
 
