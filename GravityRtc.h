@@ -24,7 +24,9 @@
 
 #define RTC_Address   0x32  //RTC_Address 
 
-
+/**
+ * This class controls the Real Time data from the RTC device 
+ */ 
 class GravityRtc
 {
 public:
@@ -34,25 +36,50 @@ public:
 public:
 
 	
-	//Initialize RTC time to set the corresponding year, month, day, Weekday Minute Second
+	/**
+	 * Initialize RTC time to set the corresponding year, month, day, Weekday, Hour, Minute and Second
+	 * @param[in] date The date string 
+	 * @param[in] time The time string
+	 */ 
 	void adjustRtc(const __FlashStringHelper* date, const __FlashStringHelper* time);
 	
+	/**
+	 * Initialize RTC time to set the corresponding year, month, day, Weekday, Hour, Minute and Second as separated integer values
+	 * @param [in] year the year value
+	 * @param[in] month the month value
+	 * @param[in] day the day value
+	 * @param[in] week the weekday value
+	 * @param[in] hour the hor value
+	 * @param[in] minute the minute valuee
+	 * @param[in] second the seconds value
+	 */ 
 	void adjustRtc(uint16_t year,uint8_t month,uint8_t day,uint8_t week,
             	uint8_t hour,uint8_t minute,uint8_t second);
 
-	//initialization
+	/**
+	 * Initializes the I2C interface through the Arduino Wire library
+	 */ 
 	void setup();
 
-	//Update sensor data
+	/**
+	 * Reads, processes and stores the current time data
+	 */ 
 	void read();
 	
 	//getters for encapsulating time parameters
+	/**@return the year value*/
 	uint16_t	getYear()	{return this->year;};
+	/**@return the month value*/
 	uint8_t 	getMonth()	{return this->month;};
+	/**@return the day value*/
 	uint8_t 	getDay()	{return this->day;};		
+	/**@return the weeday value*/
 	uint8_t 	getWeek()	{return this->week;};
+	/**@return the hour value*/
 	uint8_t 	getHour()	{return this->hour;};
+	/**@return the minute value*/
 	uint8_t 	getMinute()	{return this->minute;};
+	/**@return the seconds value*/
 	uint8_t 	getSecond()	{return this->second;};
 
 private:

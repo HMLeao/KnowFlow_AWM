@@ -26,12 +26,7 @@
 *****************
 *****************************************************/
 
-/**
- * @file SdService.h
- * @brief This class generates a .csv and stores it at the SD card. The .csv file holds a table with all the data
- *	readen from the sensors, generating a log file. The SdService uses a RTC to get a timestamp
- * 
- */
+
 
 #pragma once
 
@@ -40,19 +35,36 @@
 #include "string.h"
 #include "GravityRtc.h"
 
+/**
+ * 
+ * This class generates a .csv and stores it at the SD card. The .csv file holds a table with all the data
+ *	readen from the sensors, generating a log file. The SdService uses a RTC to get a timestamp
+ * 
+ */
 class SdService
 {
 
 public:
 	int chipSelect;
 public:
+/**
+ * 	The SdService uses a Rtc to save the timestamp and an ISensor pointer array to get the data
+ * @param[in] gravitySensor[] the sensor array containing the data to store onto the sd card
+ * @param[in] newRtc reference for the rtc that SdService will work with
+ */ 
 	SdService(ISensor* gravitySensor[], GravityRtc& newRtc);
 	~ SdService ();
 
-	// initialization
+/**
+ * Initializes the SD card, writes the header on the sensor.csv file if it doesn't exists and starts the 
+ * RTC device. 
+ */ 
 	void  begin ();
 
-	// Update write SD card data
+/**
+ * Takes the sensor values and the timestamp from the RTC and writes a line of data on the file
+ * 
+ */ 
 	void  update ();
 
 private:

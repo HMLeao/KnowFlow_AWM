@@ -13,7 +13,7 @@ var dir_75ac70e027c8472dd0de14fa5a45308a =
     [ "ISensor.h", "_i_sensor_8h.html", [
       [ "ISensor", "class_i_sensor.html", "class_i_sensor" ]
     ] ],
-    [ "KnowFlow.h", "_know_flow_8h_source.html", null ],
+    [ "KnowFlow.h", "_know_flow_8h.html", null ],
     [ "SdService.h", "_sd_service_8h_source.html", null ],
     [ "SensorDo.h", "_sensor_do_8h_source.html", null ],
     [ "SensorLog.h", "_sensor_log_8h_source.html", null ]

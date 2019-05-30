@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['ph_5fb_5fcoeff',['PH_B_COEFF',['../group___c_a_l___c_o_e_f_f.html#ga3d9cbf54f9b4b5ac4915d7d176e77bfe',1,'Config.h']]],
-  ['ph_5findex',['PH_INDEX',['../group___a_r_r_a_y___d_e_f_s.html#gaad8cbdb71736e79d15b2699c50b5dbfd',1,'Config.h']]],
-  ['ph_5fm_5fcoeff',['PH_M_COEFF',['../group___c_a_l___c_o_e_f_f.html#gabe5c1bc9018d7fb405b0f69c568d866b',1,'Config.h']]],
-  ['phoffset',['PHOFFSET',['../_config_8h.html#a2a353ec5131082cab500ebbfd471615a',1,'Config.h']]],
-  ['phpin',['PHPIN',['../group___p_i_n___s_e_t_t_i_n_g_s.html#ga992fbb764f982b28e19730a8327b67a6',1,'Config.h']]]
+  ['orp_5findex',['ORP_INDEX',['../group___a_r_r_a_y___d_e_f_s.html#ga7104f69c9df0ea675fddbf7cf1b4ec22',1,'Config.h']]],
+  ['orp_5foffset',['ORP_OFFSET',['../group___c_a_l___c_o_e_f_f.html#gafd22da5c5584608227366042cdc86166',1,'Config.h']]],
+  ['orppin',['ORPPIN',['../group___p_i_n___s_e_t_t_i_n_g_s.html#ga2f2dcc0d9b12ba6a368d780187c98017',1,'Config.h']]]
 ];

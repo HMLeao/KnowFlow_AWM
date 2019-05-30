@@ -1,38 +1,167 @@
 \hypertarget{class_gravity_rtc}{}\section{Gravity\+Rtc Class Reference}
 \label{class_gravity_rtc}\index{Gravity\+Rtc@{Gravity\+Rtc}}
+
+
+{\ttfamily \#include $<$Gravity\+Rtc.\+h$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void {\bfseries adjust\+Rtc} (const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$date, const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$time)\hypertarget{class_gravity_rtc_af98ba41a948771253e5e936063a817d3}{}\label{class_gravity_rtc_af98ba41a948771253e5e936063a817d3}
-
+void \hyperlink{class_gravity_rtc_af98ba41a948771253e5e936063a817d3}{adjust\+Rtc} (const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$date, const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$time)
 \item 
-void {\bfseries adjust\+Rtc} (uint16\+\_\+t year, uint8\+\_\+t month, uint8\+\_\+t day, uint8\+\_\+t week, uint8\+\_\+t hour, uint8\+\_\+t minute, uint8\+\_\+t second)\hypertarget{class_gravity_rtc_afd60ca78ef607244348873630ccf9259}{}\label{class_gravity_rtc_afd60ca78ef607244348873630ccf9259}
-
+void \hyperlink{class_gravity_rtc_afd60ca78ef607244348873630ccf9259}{adjust\+Rtc} (uint16\+\_\+t year, uint8\+\_\+t month, uint8\+\_\+t day, uint8\+\_\+t week, uint8\+\_\+t hour, uint8\+\_\+t minute, uint8\+\_\+t second)
 \item 
-void {\bfseries setup} ()\hypertarget{class_gravity_rtc_ac4035c99a3e51f7b643628ab885c176b}{}\label{class_gravity_rtc_ac4035c99a3e51f7b643628ab885c176b}
-
+void \hyperlink{class_gravity_rtc_ac4035c99a3e51f7b643628ab885c176b}{setup} ()
 \item 
-void {\bfseries read} ()\hypertarget{class_gravity_rtc_ab4d3d5800f67e1362502be92107cd8b9}{}\label{class_gravity_rtc_ab4d3d5800f67e1362502be92107cd8b9}
-
+void \hyperlink{class_gravity_rtc_ab4d3d5800f67e1362502be92107cd8b9}{read} ()
 \item 
-uint16\+\_\+t {\bfseries get\+Year} ()\hypertarget{class_gravity_rtc_a35c000ff428ac2c0b46d1b490532b29f}{}\label{class_gravity_rtc_a35c000ff428ac2c0b46d1b490532b29f}
-
+uint16\+\_\+t \hyperlink{class_gravity_rtc_a35c000ff428ac2c0b46d1b490532b29f}{get\+Year} ()
 \item 
-uint8\+\_\+t {\bfseries get\+Month} ()\hypertarget{class_gravity_rtc_aaacf3ae5e3521206560f3a23b64030cd}{}\label{class_gravity_rtc_aaacf3ae5e3521206560f3a23b64030cd}
-
+uint8\+\_\+t \hyperlink{class_gravity_rtc_aaacf3ae5e3521206560f3a23b64030cd}{get\+Month} ()
 \item 
-uint8\+\_\+t {\bfseries get\+Day} ()\hypertarget{class_gravity_rtc_adb6f74357a48f49ac0596aac3f558c7d}{}\label{class_gravity_rtc_adb6f74357a48f49ac0596aac3f558c7d}
-
+uint8\+\_\+t \hyperlink{class_gravity_rtc_adb6f74357a48f49ac0596aac3f558c7d}{get\+Day} ()
 \item 
-uint8\+\_\+t {\bfseries get\+Week} ()\hypertarget{class_gravity_rtc_aa3d944f570e2906faad6ab4b1aa35372}{}\label{class_gravity_rtc_aa3d944f570e2906faad6ab4b1aa35372}
-
+uint8\+\_\+t \hyperlink{class_gravity_rtc_aa3d944f570e2906faad6ab4b1aa35372}{get\+Week} ()
 \item 
-uint8\+\_\+t {\bfseries get\+Hour} ()\hypertarget{class_gravity_rtc_adae161e4945aacae87a82f7d03b33f3a}{}\label{class_gravity_rtc_adae161e4945aacae87a82f7d03b33f3a}
-
+uint8\+\_\+t \hyperlink{class_gravity_rtc_adae161e4945aacae87a82f7d03b33f3a}{get\+Hour} ()
 \item 
-uint8\+\_\+t {\bfseries get\+Minute} ()\hypertarget{class_gravity_rtc_a42038ee8675d49eae74ce75ee8bd4fa9}{}\label{class_gravity_rtc_a42038ee8675d49eae74ce75ee8bd4fa9}
-
+uint8\+\_\+t \hyperlink{class_gravity_rtc_a42038ee8675d49eae74ce75ee8bd4fa9}{get\+Minute} ()
 \item 
-uint8\+\_\+t {\bfseries get\+Second} ()\hypertarget{class_gravity_rtc_afb1a44b11e84bec28ed72e1b73068e54}{}\label{class_gravity_rtc_afb1a44b11e84bec28ed72e1b73068e54}
-
+uint8\+\_\+t \hyperlink{class_gravity_rtc_afb1a44b11e84bec28ed72e1b73068e54}{get\+Second} ()
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class controls the Real Time data from the R\+TC device 
+
+\subsection{Member Function Documentation}
+\index{Gravity\+Rtc@{Gravity\+Rtc}!adjust\+Rtc@{adjust\+Rtc}}
+\index{adjust\+Rtc@{adjust\+Rtc}!Gravity\+Rtc@{Gravity\+Rtc}}
+\subsubsection[{\texorpdfstring{adjust\+Rtc(const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$date, const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$time)}{adjustRtc(const __FlashStringHelper *date, const __FlashStringHelper *time)}}]{\setlength{\rightskip}{0pt plus 5cm}void Gravity\+Rtc\+::adjust\+Rtc (
+\begin{DoxyParamCaption}
+\item[{const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$}]{date, }
+\item[{const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gravity_rtc_af98ba41a948771253e5e936063a817d3}{}\label{class_gravity_rtc_af98ba41a948771253e5e936063a817d3}
+Initialize R\+TC time to set the corresponding year, month, day, Weekday, Hour, Minute and Second 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em date} & The date string \\
+\hline
+\mbox{\tt in}  & {\em time} & The time string \\
+\hline
+\end{DoxyParams}
+\index{Gravity\+Rtc@{Gravity\+Rtc}!adjust\+Rtc@{adjust\+Rtc}}
+\index{adjust\+Rtc@{adjust\+Rtc}!Gravity\+Rtc@{Gravity\+Rtc}}
+\subsubsection[{\texorpdfstring{adjust\+Rtc(uint16\+\_\+t year, uint8\+\_\+t month, uint8\+\_\+t day, uint8\+\_\+t week, uint8\+\_\+t hour, uint8\+\_\+t minute, uint8\+\_\+t second)}{adjustRtc(uint16_t year, uint8_t month, uint8_t day, uint8_t week, uint8_t hour, uint8_t minute, uint8_t second)}}]{\setlength{\rightskip}{0pt plus 5cm}void Gravity\+Rtc\+::adjust\+Rtc (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{year, }
+\item[{uint8\+\_\+t}]{month, }
+\item[{uint8\+\_\+t}]{day, }
+\item[{uint8\+\_\+t}]{week, }
+\item[{uint8\+\_\+t}]{hour, }
+\item[{uint8\+\_\+t}]{minute, }
+\item[{uint8\+\_\+t}]{second}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gravity_rtc_afd60ca78ef607244348873630ccf9259}{}\label{class_gravity_rtc_afd60ca78ef607244348873630ccf9259}
+Initialize R\+TC time to set the corresponding year, month, day, Weekday, Hour, Minute and Second as separated integer values 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em year} & the year value \\
+\hline
+\mbox{\tt in}  & {\em month} & the month value \\
+\hline
+\mbox{\tt in}  & {\em day} & the day value \\
+\hline
+\mbox{\tt in}  & {\em week} & the weekday value \\
+\hline
+\mbox{\tt in}  & {\em hour} & the hor value \\
+\hline
+\mbox{\tt in}  & {\em minute} & the minute valuee \\
+\hline
+\mbox{\tt in}  & {\em second} & the seconds value \\
+\hline
+\end{DoxyParams}
+\index{Gravity\+Rtc@{Gravity\+Rtc}!get\+Day@{get\+Day}}
+\index{get\+Day@{get\+Day}!Gravity\+Rtc@{Gravity\+Rtc}}
+\subsubsection[{\texorpdfstring{get\+Day()}{getDay()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Gravity\+Rtc\+::get\+Day (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_gravity_rtc_adb6f74357a48f49ac0596aac3f558c7d}{}\label{class_gravity_rtc_adb6f74357a48f49ac0596aac3f558c7d}
+\begin{DoxyReturn}{Returns}
+the day value 
+\end{DoxyReturn}
+\index{Gravity\+Rtc@{Gravity\+Rtc}!get\+Hour@{get\+Hour}}
+\index{get\+Hour@{get\+Hour}!Gravity\+Rtc@{Gravity\+Rtc}}
+\subsubsection[{\texorpdfstring{get\+Hour()}{getHour()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Gravity\+Rtc\+::get\+Hour (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_gravity_rtc_adae161e4945aacae87a82f7d03b33f3a}{}\label{class_gravity_rtc_adae161e4945aacae87a82f7d03b33f3a}
+\begin{DoxyReturn}{Returns}
+the hour value 
+\end{DoxyReturn}
+\index{Gravity\+Rtc@{Gravity\+Rtc}!get\+Minute@{get\+Minute}}
+\index{get\+Minute@{get\+Minute}!Gravity\+Rtc@{Gravity\+Rtc}}
+\subsubsection[{\texorpdfstring{get\+Minute()}{getMinute()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Gravity\+Rtc\+::get\+Minute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_gravity_rtc_a42038ee8675d49eae74ce75ee8bd4fa9}{}\label{class_gravity_rtc_a42038ee8675d49eae74ce75ee8bd4fa9}
+\begin{DoxyReturn}{Returns}
+the minute value 
+\end{DoxyReturn}
+\index{Gravity\+Rtc@{Gravity\+Rtc}!get\+Month@{get\+Month}}
+\index{get\+Month@{get\+Month}!Gravity\+Rtc@{Gravity\+Rtc}}
+\subsubsection[{\texorpdfstring{get\+Month()}{getMonth()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Gravity\+Rtc\+::get\+Month (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_gravity_rtc_aaacf3ae5e3521206560f3a23b64030cd}{}\label{class_gravity_rtc_aaacf3ae5e3521206560f3a23b64030cd}
+\begin{DoxyReturn}{Returns}
+the month value 
+\end{DoxyReturn}
+\index{Gravity\+Rtc@{Gravity\+Rtc}!get\+Second@{get\+Second}}
+\index{get\+Second@{get\+Second}!Gravity\+Rtc@{Gravity\+Rtc}}
+\subsubsection[{\texorpdfstring{get\+Second()}{getSecond()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Gravity\+Rtc\+::get\+Second (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_gravity_rtc_afb1a44b11e84bec28ed72e1b73068e54}{}\label{class_gravity_rtc_afb1a44b11e84bec28ed72e1b73068e54}
+\begin{DoxyReturn}{Returns}
+the seconds value 
+\end{DoxyReturn}
+\index{Gravity\+Rtc@{Gravity\+Rtc}!get\+Week@{get\+Week}}
+\index{get\+Week@{get\+Week}!Gravity\+Rtc@{Gravity\+Rtc}}
+\subsubsection[{\texorpdfstring{get\+Week()}{getWeek()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Gravity\+Rtc\+::get\+Week (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_gravity_rtc_aa3d944f570e2906faad6ab4b1aa35372}{}\label{class_gravity_rtc_aa3d944f570e2906faad6ab4b1aa35372}
+\begin{DoxyReturn}{Returns}
+the weeday value 
+\end{DoxyReturn}
+\index{Gravity\+Rtc@{Gravity\+Rtc}!get\+Year@{get\+Year}}
+\index{get\+Year@{get\+Year}!Gravity\+Rtc@{Gravity\+Rtc}}
+\subsubsection[{\texorpdfstring{get\+Year()}{getYear()}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Gravity\+Rtc\+::get\+Year (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_gravity_rtc_a35c000ff428ac2c0b46d1b490532b29f}{}\label{class_gravity_rtc_a35c000ff428ac2c0b46d1b490532b29f}
+\begin{DoxyReturn}{Returns}
+the year value 
+\end{DoxyReturn}
+\index{Gravity\+Rtc@{Gravity\+Rtc}!read@{read}}
+\index{read@{read}!Gravity\+Rtc@{Gravity\+Rtc}}
+\subsubsection[{\texorpdfstring{read()}{read()}}]{\setlength{\rightskip}{0pt plus 5cm}void Gravity\+Rtc\+::read (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gravity_rtc_ab4d3d5800f67e1362502be92107cd8b9}{}\label{class_gravity_rtc_ab4d3d5800f67e1362502be92107cd8b9}
+Reads, processes and stores the current time data \index{Gravity\+Rtc@{Gravity\+Rtc}!setup@{setup}}
+\index{setup@{setup}!Gravity\+Rtc@{Gravity\+Rtc}}
+\subsubsection[{\texorpdfstring{setup()}{setup()}}]{\setlength{\rightskip}{0pt plus 5cm}void Gravity\+Rtc\+::setup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gravity_rtc_ac4035c99a3e51f7b643628ab885c176b}{}\label{class_gravity_rtc_ac4035c99a3e51f7b643628ab885c176b}
+Initializes the I2C interface through the Arduino Wire library 

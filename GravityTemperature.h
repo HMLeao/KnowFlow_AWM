@@ -21,6 +21,11 @@
 #define StartConvert 0
 #define ReadTemperature 1
 
+
+/**
+ * This class is responsible for taking the temperature values from the sensor, which is done by the implementations of the 
+ * one wire protocol bit banged by the OneWire.h Arduino library.
+ */ 
 class GravityTemperature : public ISensor
 {
 public:
@@ -29,16 +34,25 @@ public:
 	double temperature;
 
 public:
+/**
+ * @param[in] the pin to be used by the OneWire object
+ */ 
 	GravityTemperature(int pin);
 	~GravityTemperature();
 
-	// initialization
+/**
+ * Initializes the sensor
+ */ 
 	void  begin ();
 
-	// update the sensor data
+/**
+ * Updates the temperature value
+ */ 
 	void  update ();
 
-	// Get the sensor data
+/**
+ * @return The processed temperature data
+ */ 
 	double getValue();
 
 private:

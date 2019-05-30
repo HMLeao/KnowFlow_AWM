@@ -2,6 +2,10 @@
 \label{class_gravity_temperature}\index{Gravity\+Temperature@{Gravity\+Temperature}}
 
 
+{\ttfamily \#include $<$Gravity\+Temperature.\+h$>$}
+
+
+
 Inheritance diagram for Gravity\+Temperature\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -21,8 +25,7 @@ Collaboration diagram for Gravity\+Temperature\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries Gravity\+Temperature} (int pin)\hypertarget{class_gravity_temperature_a1156c03146096ebd11dfeb12d047b017}{}\label{class_gravity_temperature_a1156c03146096ebd11dfeb12d047b017}
-
+\hyperlink{class_gravity_temperature_a1156c03146096ebd11dfeb12d047b017}{Gravity\+Temperature} (int pin)
 \item 
 void \hyperlink{class_gravity_temperature_a4b0e6bba015c69a153a85cc8221dee2f}{begin} ()
 \item 
@@ -41,6 +44,24 @@ double {\bfseries temperature}\hypertarget{class_gravity_temperature_a6a4ea3f758
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+This class is responsible for taking the temperature values from the sensor, which is done by the implementations of the one wire protocol bit banged by the One\+Wire.\+h Arduino library. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Gravity\+Temperature@{Gravity\+Temperature}!Gravity\+Temperature@{Gravity\+Temperature}}
+\index{Gravity\+Temperature@{Gravity\+Temperature}!Gravity\+Temperature@{Gravity\+Temperature}}
+\subsubsection[{\texorpdfstring{Gravity\+Temperature(int pin)}{GravityTemperature(int pin)}}]{\setlength{\rightskip}{0pt plus 5cm}Gravity\+Temperature\+::\+Gravity\+Temperature (
+\begin{DoxyParamCaption}
+\item[{int}]{pin}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gravity_temperature_a1156c03146096ebd11dfeb12d047b017}{}\label{class_gravity_temperature_a1156c03146096ebd11dfeb12d047b017}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em the} & pin to be used by the One\+Wire object \\
+\hline
+\end{DoxyParams}
+
+
 \subsection{Member Function Documentation}
 \index{Gravity\+Temperature@{Gravity\+Temperature}!begin@{begin}}
 \index{begin@{begin}!Gravity\+Temperature@{Gravity\+Temperature}}
@@ -49,7 +70,7 @@ double {\bfseries temperature}\hypertarget{class_gravity_temperature_a6a4ea3f758
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_gravity_temperature_a4b0e6bba015c69a153a85cc8221dee2f}{}\label{class_gravity_temperature_a4b0e6bba015c69a153a85cc8221dee2f}
-This function starts the sensor. All the initial configurations must be done here 
+Initializes the sensor 
 
 Implements \hyperlink{class_i_sensor_a88d0363e9bb83378090a021d634e03f7}{I\+Sensor}.
 
@@ -60,7 +81,10 @@ Implements \hyperlink{class_i_sensor_a88d0363e9bb83378090a021d634e03f7}{I\+Senso
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_gravity_temperature_a7ee39e7ab5521f9dcbdea543c26c3a26}{}\label{class_gravity_temperature_a7ee39e7ab5521f9dcbdea543c26c3a26}
-This function must return the sensor data. You should run \hyperlink{class_gravity_temperature_aa7a3463559fe46fa4471f779fb5ffdce}{update()} just before \hyperlink{class_gravity_temperature_a7ee39e7ab5521f9dcbdea543c26c3a26}{get\+Value()} to return a recent and valid data. 
+\begin{DoxyReturn}{Returns}
+The processed temperature data 
+\end{DoxyReturn}
+
 
 Implements \hyperlink{class_i_sensor_a9972b325fb329e6eaefd79e562ad7776}{I\+Sensor}.
 
@@ -71,7 +95,7 @@ Implements \hyperlink{class_i_sensor_a9972b325fb329e6eaefd79e562ad7776}{I\+Senso
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_gravity_temperature_aa7a3463559fe46fa4471f779fb5ffdce}{}\label{class_gravity_temperature_aa7a3463559fe46fa4471f779fb5ffdce}
-This function updates the sensor value and stores the value, so that it\textquotesingle{}s ready to return data 
+Updates the temperature value 
 
 Implements \hyperlink{class_i_sensor_a53606e8b3764eda1b4b0c00aa983e264}{I\+Sensor}.
 

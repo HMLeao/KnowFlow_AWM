@@ -1,16 +1,17 @@
 \hypertarget{class_sd_service}{}\section{Sd\+Service Class Reference}
 \label{class_sd_service}\index{Sd\+Service@{Sd\+Service}}
+
+
+{\ttfamily \#include $<$Sd\+Service.\+h$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries Sd\+Service} (\hyperlink{class_i_sensor}{I\+Sensor} $\ast$gravity\+Sensor\mbox{[}$\,$\mbox{]})\hypertarget{class_sd_service_afed7960e6a28c171ffe552c88cfe4624}{}\label{class_sd_service_afed7960e6a28c171ffe552c88cfe4624}
-
+\hyperlink{class_sd_service_aea88d15b3177b80996d1a6ace96fbff4}{Sd\+Service} (\hyperlink{class_i_sensor}{I\+Sensor} $\ast$gravity\+Sensor\mbox{[}$\,$\mbox{]}, \hyperlink{class_gravity_rtc}{Gravity\+Rtc} \&new\+Rtc)
 \item 
-void {\bfseries begin} ()\hypertarget{class_sd_service_a5c6e09a57f22f163676a51eab6f933c5}{}\label{class_sd_service_a5c6e09a57f22f163676a51eab6f933c5}
-
+void \hyperlink{class_sd_service_a5c6e09a57f22f163676a51eab6f933c5}{begin} ()
 \item 
-void {\bfseries update} ()\hypertarget{class_sd_service_a776b1a8d229b9b0bc44cbf6ae9b37c9d}{}\label{class_sd_service_a776b1a8d229b9b0bc44cbf6ae9b37c9d}
-
+void \hyperlink{class_sd_service_a776b1a8d229b9b0bc44cbf6ae9b37c9d}{update} ()
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -18,3 +19,42 @@ void {\bfseries update} ()\hypertarget{class_sd_service_a776b1a8d229b9b0bc44cbf6
 int {\bfseries chip\+Select}\hypertarget{class_sd_service_a173f33cc9797e3ce4e213a75e627d2c9}{}\label{class_sd_service_a173f33cc9797e3ce4e213a75e627d2c9}
 
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class generates a .csv and stores it at the SD card. The .csv file holds a table with all the data readen from the sensors, generating a log file. The \hyperlink{class_sd_service}{Sd\+Service} uses a R\+TC to get a timestamp 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Sd\+Service@{Sd\+Service}!Sd\+Service@{Sd\+Service}}
+\index{Sd\+Service@{Sd\+Service}!Sd\+Service@{Sd\+Service}}
+\subsubsection[{\texorpdfstring{Sd\+Service(\+I\+Sensor $\ast$gravity\+Sensor[], Gravity\+Rtc \&new\+Rtc)}{SdService(ISensor *gravitySensor[], GravityRtc &newRtc)}}]{\setlength{\rightskip}{0pt plus 5cm}Sd\+Service\+::\+Sd\+Service (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Sensor} $\ast$}]{gravity\+Sensor\mbox{[}$\,$\mbox{]}, }
+\item[{{\bf Gravity\+Rtc} \&}]{new\+Rtc}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_service_aea88d15b3177b80996d1a6ace96fbff4}{}\label{class_sd_service_aea88d15b3177b80996d1a6ace96fbff4}
+The \hyperlink{class_sd_service}{Sd\+Service} uses a Rtc to save the timestamp and an \hyperlink{class_i_sensor}{I\+Sensor} pointer array to get the data 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em gravity\+Sensor\mbox{[}$\,$\mbox{]}} & the sensor array containing the data to store onto the sd card \\
+\hline
+\mbox{\tt in}  & {\em new\+Rtc} & reference for the rtc that \hyperlink{class_sd_service}{Sd\+Service} will work with \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Sd\+Service@{Sd\+Service}!begin@{begin}}
+\index{begin@{begin}!Sd\+Service@{Sd\+Service}}
+\subsubsection[{\texorpdfstring{begin()}{begin()}}]{\setlength{\rightskip}{0pt plus 5cm}void Sd\+Service\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_service_a5c6e09a57f22f163676a51eab6f933c5}{}\label{class_sd_service_a5c6e09a57f22f163676a51eab6f933c5}
+Initializes the SD card, writes the header on the sensor.\+csv file if it doesn\textquotesingle{}t exists and starts the R\+TC device. \index{Sd\+Service@{Sd\+Service}!update@{update}}
+\index{update@{update}!Sd\+Service@{Sd\+Service}}
+\subsubsection[{\texorpdfstring{update()}{update()}}]{\setlength{\rightskip}{0pt plus 5cm}void Sd\+Service\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd_service_a776b1a8d229b9b0bc44cbf6ae9b37c9d}{}\label{class_sd_service_a776b1a8d229b9b0bc44cbf6ae9b37c9d}
+Takes the sensor values and the timestamp from the R\+TC and writes a line of data on the file 

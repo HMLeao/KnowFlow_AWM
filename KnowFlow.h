@@ -1,8 +1,12 @@
 #ifndef KnowFlow_H
 #define KnowFlow_H
 
+/**
+ * @file KnowFlow.h
+ * 
+ * 
+ */ 
 
-//calling everybody at once
 #include "ISensor.h"
 #include "Config.h"
 #include "Debug.h"

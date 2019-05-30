@@ -19,7 +19,11 @@
 #pragma once
 #include "ISensor.h"
 #include "Arduino.h"
-
+/**
+ * This class controls the <a target="_blank" rel="noopener noreferer" href="https://www.atlas-scientific.com/product_pages/kits/do_kit.html">Atlas Scientific DO Sensor</a> via uart serial interface.
+ * It takes Dissolved Oxigen readings from the <a target="_blank" rel="noopener noreferer" href="https://www.atlas-scientific.com/_files/_datasheets/_circuit/DO_EZO_Datasheet.pdf?">EZO</a> circuit and stores 
+ * it's current value.
+ */ 
 class SensorDo: public ISensor
 {
 public:

@@ -117,17 +117,16 @@ $(document).ready(function(){initNavTree('class_sd_service.html','');});
 <div class="title">SdService Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_sd_service_8h_source.html">SdService.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afed7960e6a28c171ffe552c88cfe4624"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afed7960e6a28c171ffe552c88cfe4624"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SdService</b> (<a class="el" href="class_i_sensor.html">ISensor</a> *gravitySensor[])</td></tr>
-<tr class="separator:afed7960e6a28c171ffe552c88cfe4624"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c6e09a57f22f163676a51eab6f933c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c6e09a57f22f163676a51eab6f933c5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
+<tr class="memitem:aea88d15b3177b80996d1a6ace96fbff4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sd_service.html#aea88d15b3177b80996d1a6ace96fbff4">SdService</a> (<a class="el" href="class_i_sensor.html">ISensor</a> *gravitySensor[], <a class="el" href="class_gravity_rtc.html">GravityRtc</a> &amp;newRtc)</td></tr>
+<tr class="separator:aea88d15b3177b80996d1a6ace96fbff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c6e09a57f22f163676a51eab6f933c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sd_service.html#a5c6e09a57f22f163676a51eab6f933c5">begin</a> ()</td></tr>
 <tr class="separator:a5c6e09a57f22f163676a51eab6f933c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a776b1a8d229b9b0bc44cbf6ae9b37c9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a776b1a8d229b9b0bc44cbf6ae9b37c9d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
+<tr class="memitem:a776b1a8d229b9b0bc44cbf6ae9b37c9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sd_service.html#a776b1a8d229b9b0bc44cbf6ae9b37c9d">update</a> ()</td></tr>
 <tr class="separator:a776b1a8d229b9b0bc44cbf6ae9b37c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -136,6 +135,75 @@ Public Attributes</h2></td></tr>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>chipSelect</b></td></tr>
 <tr class="separator:a173f33cc9797e3ce4e213a75e627d2c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class generates a .csv and stores it at the SD card. The .csv file holds a table with all the data readen from the sensors, generating a log file. The <a class="el" href="class_sd_service.html">SdService</a> uses a RTC to get a timestamp </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="aea88d15b3177b80996d1a6ace96fbff4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SdService::SdService </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i_sensor.html">ISensor</a> *&#160;</td>
+          <td class="paramname"><em>gravitySensor</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_gravity_rtc.html">GravityRtc</a> &amp;&#160;</td>
+          <td class="paramname"><em>newRtc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The <a class="el" href="class_sd_service.html">SdService</a> uses a Rtc to save the timestamp and an <a class="el" href="class_i_sensor.html">ISensor</a> pointer array to get the data </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gravitySensor[]</td><td>the sensor array containing the data to store onto the sd card </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newRtc</td><td>reference for the rtc that <a class="el" href="class_sd_service.html">SdService</a> will work with </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a5c6e09a57f22f163676a51eab6f933c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SdService::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initializes the SD card, writes the header on the sensor.csv file if it doesn't exists and starts the RTC device. </p>
+
+</div>
+</div>
+<a class="anchor" id="a776b1a8d229b9b0bc44cbf6ae9b37c9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SdService::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Takes the sensor values and the timestamp from the RTC and writes a line of data on the file </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

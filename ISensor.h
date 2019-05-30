@@ -20,7 +20,7 @@
 
 /**
  * @file ISensor.h
- * @brief This class represents a generic sensor.
+ * This class represents a generic sensor.
  * @author Jason(jason.ling@dfrobot.com)
  * @date 2017-04-06
  */ 

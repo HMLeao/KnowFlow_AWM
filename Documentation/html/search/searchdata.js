@@ -1,9 +1,9 @@
 var indexSectionsWithContent =
 {
-  0: "abcdegioprstu",
+  0: "abcdegikoprstu",
   1: "dgis",
-  2: "ci",
-  3: "bgsu",
+  2: "cik",
+  3: "abgrsu",
   4: "adps",
   5: "acs",
   6: "r"
