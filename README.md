@@ -7,9 +7,7 @@ This branch is for ongoing development
 
 KnowFlow is an open source water monitoring device and an education program.
 
-![](https://publiclab.org/system/images/photos/000/020/692/large/BOM.JPG)
-
-
+![KnowFlow materials](https://publiclab.org/system/images/photos/000/020/692/large/BOM.JPG)
 
 For the device part, KnowFlow is designed for environmental activists, researchers, students... anyone
 who wants to know the water quality using low cost and customized tools. It is based on arduino uno and 
