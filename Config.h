@@ -40,7 +40,8 @@
 
 /**Set sensor offset (calibration data)*/
 #define PHOFFSET 0.12	
-#define ECKVALUE 0.6	
+#define ECKVALUE 0.985	
+#define ECOFFSET 0.01
 
 
 
