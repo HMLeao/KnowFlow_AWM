@@ -56,6 +56,11 @@ public:
 	 */ 
 	double getValue();
 
+	/**
+	 * Sends messasges to the EZO
+	 * @param[in] the message to print do EZO
+	 */
+	void print(String msg);
 private:
 
 	String sensorstring = "";
