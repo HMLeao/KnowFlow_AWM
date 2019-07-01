@@ -56,7 +56,7 @@
 #define PH_M_COEFF	4.411
 /** PH Y-intercept */
 #define	PH_B_COEFF	-0.014
-/**ORP offset is set my disconnecting the sensor from the BNC, then pressing the calibration button.
+/**ORP offset is set by disconnecting the sensor from the BNC, then pressing the calibration button.
  * The value readen must be set on this define below*/
 #define ORP_OFFSET	8.79
 
