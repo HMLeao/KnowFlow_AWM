@@ -117,3 +117,8 @@ double SensorDo::getValue()
 //	inputstring = Serial.readStringUntil(13);           //read the string until we see a <CR>
 //	input_string_complete = true;                       //set the flag used to tell if we have received a completed string from the PC 
 //}
+
+void SensorDo::print(String msg)
+{
+	inputStream->print(msg);
+}

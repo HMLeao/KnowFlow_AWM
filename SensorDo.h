@@ -56,6 +56,12 @@ public:
 	 */ 
 	double getValue();
 
+	/**
+	 *
+	 *
+	 */
+	void print(String msg);
+
 private:
 
 	String sensorstring = "";

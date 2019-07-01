@@ -32,16 +32,17 @@ public:
 	// Take the sample interval
 	int samplingInterval;
 private:
+
 	static const int arrayLength = 5;
 	unsigned int pHArray [arrayLength];    // stores the average value of the sensor return data
 	double pHValue, voltage;
 	double averageVoltage;
 	double sum;
-
+	double referenceVoltage = 5.0;
 
 	/* Calibration member variables */
-	// offset compensation / y-axis intercept
-	double offset;
+	// y-axis intercept
+	double yAxis;
 	// slope
 	double slope;
 
@@ -49,12 +50,26 @@ public:
 	GravityPh();
 	~GravityPh() {};
 	// initialization
-	void  begin ();
+	void begin();
+
+	void begin(double defSlope, double defYaxis);
 
 	// update the sensor data
 	void  update ();
 
 	// Get the sensor data
 	double getValue();
+
+	/**
+	 * defines the Y-Axis intercept parameter for calibration
+	 *@param[in]  newYAxis is the new Y-Axis intercept
+	 */
+	void setYAxis(double newYAxis);
+
+	/**
+	 * defines the newSlope parameter for calibration
+	 *@param[in]  Slope is the new slope value
+	 */
+	void setSlope(double newSlope);
 };
 

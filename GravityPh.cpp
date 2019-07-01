@@ -22,8 +22,8 @@
 #include "GravityPh.h"
 
 
-GravityPh::GravityPh():phSensorPin(A2), offset(PH_B_COEFF), 
-samplingInterval(30),pHValue(0),voltage(0), sum(0), slope(PH_M_COEFF)
+GravityPh::GravityPh():phSensorPin(PHPIN),  
+samplingInterval(30),pHValue(0),voltage(0), sum(0)
 {
 }
 
@@ -31,11 +31,17 @@ samplingInterval(30),pHValue(0),voltage(0), sum(0), slope(PH_M_COEFF)
 // function name: begin ()
 // Function Description: Initializes the ph sensor
 //********************************************************************************************
+void GravityPh::begin(double defSlope, double defYaxis)
+{
+	this->yAxis = defYaxis;
+	this->slope = defSlope;
+	pinMode(phSensorPin, INPUT);
+}
+
 void GravityPh::begin()
 {
 	pinMode(phSensorPin, INPUT);
 }
-
 
 //********************************************************************************************
 // function name: update ()
@@ -58,8 +64,8 @@ void GravityPh::update()
 				this->sum += pHArray[i];
 			averageVoltage = this->sum / arrayLength;
 			this->sum = 0;
-			voltage = averageVoltage*5.0 / 1024.0;
-			pHValue = slope*voltage + this->offset;	//	<-- Linear function 
+			voltage = averageVoltage*referenceVoltage / 1024.0;
+			pHValue = slope*voltage + this->yAxis;	//	<-- Linear function 
 			//		   ^ 		             ^    parameters to be set when calibrating
 		}
 
@@ -75,5 +81,16 @@ double GravityPh::getValue()
 {
 	return this->pHValue;
 }
+
+void GravityPh::setYAxis(double newYAxis)
+{
+	this->yAxis = newYAxis;
+}
+
+void GravityPh::setSlope(double newSlope)
+{
+	this->slope = newSlope;
+}
+
 
 
