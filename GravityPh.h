@@ -1,4 +1,4 @@
-﻿/*********************************************************************
+/*********************************************************************
 * @file GravityPh.h
 *
 * Copyright (C)    2017   [DFRobot](http://www.dfrobot.com),
@@ -42,9 +42,9 @@ private:
 
 	/* Calibration member variables */
 	// y-axis intercept
-	double yAxis;
+	double yAxis = -0.014;
 	// slope
-	double slope;
+	double slope = 4.411;
 
 public:
 	GravityPh();
