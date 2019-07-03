@@ -101,7 +101,7 @@ void GravityEc::calculateEc()
 	if (millis() - printTime >= printInterval)
 	{
 		printTime = millis();
-		averageVoltage = AnalogAverage*5000.0 / 1024.0;
+		averageVoltage = AnalogAverage*(V_REFERENCE*1000) / 1024.0;
 		double TempCoefficient = 1.0 + 0.0185*(this->ecTemperature->getValue() - 25.0);    //temperature compensation formula: fFinalResult(25^C) = fFinalResult(current)/(1.0+0.0185*(fTP-25.0));
 
 		double CoefficientVolatge = (double)averageVoltage / TempCoefficient;

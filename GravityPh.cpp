@@ -64,7 +64,7 @@ void GravityPh::update()
 				this->sum += pHArray[i];
 			averageVoltage = this->sum / arrayLength;
 			this->sum = 0;
-			voltage = averageVoltage*referenceVoltage / 1024.0;
+			voltage = averageVoltage*V_REFERENCE / 1024.0;
 			pHValue = slope*voltage + this->yAxis;	//	<-- Linear function 
 			//		   ^ 		             ^    parameters to be set when calibrating
 		}

@@ -29,7 +29,7 @@ public:
 	int orpSensorPin;
 
 	// voltage value
-	double voltage;
+	double voltage  = V_REFERENCE;
 
 	// Calibrate the offset
 	float offset;

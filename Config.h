@@ -18,6 +18,11 @@
 #define SELECTEC 
 
 /**
+ * Set here your voltage reference value
+ */
+#define V_REFERENCE 4.67
+
+/**
  * @file Config.h
  * @defgroup PIN_SETTINGS Sensor pin settings
  * @brief set here the Arduino pins on which the sensors are connected
@@ -58,7 +63,7 @@
 #define	PH_B_COEFF	-0.014
 /**ORP offset is set by disconnecting the sensor from the BNC, then pressing the calibration button.
  * The value readen must be set on this define below*/
-#define ORP_OFFSET	8.79
+#define ORP_OFFSET	-58.8
 
 /**@}*/
 

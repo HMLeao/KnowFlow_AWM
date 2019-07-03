@@ -22,7 +22,7 @@
 #include "GravityOrp.h"
 
 
-GravityOrp::GravityOrp():orpSensorPin(ORPPIN), voltage(5.0), offset(ORP_OFFSET), orpValue(0.0), sum(0)
+GravityOrp::GravityOrp():orpSensorPin(ORPPIN), voltage(V_REFERENCE), offset(ORP_OFFSET), orpValue(0.0), sum(0)
 {
 }
 

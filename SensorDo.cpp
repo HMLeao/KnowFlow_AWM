@@ -120,9 +120,6 @@ double SensorDo::getValue()
 
 void SensorDo::print(String msg)
 {
-<<<<<<< HEAD
 	inputStream->print(msg);
-=======
 	inputStream->println(msg);
->>>>>>> 6f3724f9e1aed0f57df4da5cd38bcbde2ab77c79
 }

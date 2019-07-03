@@ -57,18 +57,14 @@ public:
 	double getValue();
 
 	/**
-<<<<<<< HEAD
 	 *
 	 *
 	 */
 	void print(String msg);
-
-=======
+	/**
 	 * Sends messasges to the EZO
 	 * @param[in] the message to print do EZO
 	 */
-	void print(String msg);
->>>>>>> 6f3724f9e1aed0f57df4da5cd38bcbde2ab77c79
 private:
 
 	String sensorstring = "";
