@@ -40,11 +40,14 @@ private:
 	double sum;
 	double referenceVoltage = 5.0;
 
+
+	#ifdef USING_DYNAMIC_CAL
 	/* Calibration member variables */
 	// y-axis intercept
 	double yAxis = -0.014;
 	// slope
 	double slope = 4.411;
+	#endif
 
 public:
 	GravityPh();
@@ -60,6 +63,7 @@ public:
 	// Get the sensor data
 	double getValue();
 
+	#ifdef USING_DYNAMIC_CAL
 	/**
 	 * defines the Y-Axis intercept parameter for calibration
 	 *@param[in]  newYAxis is the new Y-Axis intercept
@@ -71,5 +75,6 @@ public:
 	 *@param[in]  Slope is the new slope value
 	 */
 	void setSlope(double newSlope);
+	#endif
 };
 

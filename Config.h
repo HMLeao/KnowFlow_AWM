@@ -23,6 +23,12 @@
 #define V_REFERENCE 4.67
 
 /**
+ * Define whether you are using dynamic calibaration or not
+ *
+ */
+#define USING_DYNAMIC_CAL
+
+/**
  * @file Config.h
  * @defgroup PIN_SETTINGS Sensor pin settings
  * @brief set here the Arduino pins on which the sensors are connected

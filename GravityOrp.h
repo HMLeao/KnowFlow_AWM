@@ -58,5 +58,14 @@ public:
 
 	// Get the sensor data
 	double getValue();
+
+	#ifdef USING_DYNAMIC_CAL
+
+	/**
+	 * sets a new offset for calculating the orp
+	 *@param[in] the new value for the offset
+	 */
+	void setOffset(double);
+	#endif
 };
 

@@ -65,8 +65,11 @@ void GravityPh::update()
 			averageVoltage = this->sum / arrayLength;
 			this->sum = 0;
 			voltage = averageVoltage*V_REFERENCE / 1024.0;
+			#ifdef USING_DYNAMIC_CAL
 			pHValue = slope*voltage + this->yAxis;	//	<-- Linear function 
-			//		   ^ 		             ^    parameters to be set when calibrating
+			#else
+			pHValue = PH_M_COEFF*voltage + PH_B_COEFF;	//	<-- Linear function
+			#endif 
 		}
 
 	}

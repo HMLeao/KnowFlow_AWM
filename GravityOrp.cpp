@@ -77,3 +77,9 @@ double GravityOrp::getValue()
 {
 	return this->orpValue;
 }
+
+
+void GravityOrp::setOffset(double newOffset)
+{
+	this->offset = newOffset;
+}
