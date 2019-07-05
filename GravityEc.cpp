@@ -66,7 +66,7 @@ void GravityEc::update()
 //********************************************************************************************
 double GravityEc::getValue()
 {
-	return ECcurrent+ECOFFSET;
+	return ((ECcurrent+ECOFFSET)/2);
 }
 
 

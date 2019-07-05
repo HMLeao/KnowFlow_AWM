@@ -64,6 +64,7 @@ void GravityOrp::update()
 			this->sum = 0;
 			//convert the analog value to orp according the circuit
 			this->orpValue = ((30 * this->voltage * 1000) - (75 * averageOrp*this->voltage * 1000 / 1024)) / 75 - this->offset;
+			// this->orpValue = -((((analogRead(ORPPIN)*V_REFERENCE) / 1024) - 2 - offset) * 1000);
 		}
 	}
 }

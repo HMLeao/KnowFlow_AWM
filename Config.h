@@ -20,7 +20,7 @@
 /**
  * Set here your voltage reference value
  */
-#define V_REFERENCE 4.67
+#define V_REFERENCE 3.853
 
 /**
  * Define whether you are using dynamic calibaration or not
@@ -34,7 +34,7 @@
  * @brief set here the Arduino pins on which the sensors are connected
  * @{
  */ 
-/** Gravoty dissolved oxygen pin*/
+/** Gravity dissolved oxygen pin*/
 #define DOPIN  A0
 /** Electric conductivity pin*/
 #define ECPIN  A1
@@ -52,7 +52,7 @@
 /**Set sensor offset (calibration data)*/
 #define PHOFFSET 0.12	
 #define ECKVALUE 0.985	
-#define ECOFFSET 0.01
+#define ECOFFSET 0
 
 
 
@@ -69,8 +69,7 @@
 #define	PH_B_COEFF	-0.014
 /**ORP offset is set by disconnecting the sensor from the BNC, then pressing the calibration button.
  * The value readen must be set on this define below*/
-#define ORP_OFFSET	-58.8
-
+#define ORP_OFFSET	-0.2
 /**@}*/
 
 
