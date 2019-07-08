@@ -54,6 +54,10 @@
 #define ECKVALUE 0.985	
 #define ECOFFSET 0
 
+/**
+ * Set the gain of the signal conditioning circuit fot the EC
+ */
+#define EC_GAIN 5.46
 
 
 /**
